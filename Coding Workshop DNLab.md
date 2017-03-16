@@ -1,4 +1,7 @@
-#Decision Neuroscience Lab Coding Practices Workshop#
+# Decision Neuroscience Lab Coding Practices Workshop #
+
+This workshop is focused on establishing good practices in the lab regarding how we write, share and evaluate code. Some useful pieces of software are also introduced. The practices and software introduced below will make it easier to track development of software, and to work collaboratively on the same code.
+
 <br/><br/>
 
 ##Outline##
@@ -16,6 +19,9 @@
 * Setting up a Git account
 * Joining the Decision Neuroscience Lab organisation
 * Useful features of Git (e.g. push, pull, branch) demonstrated in Sourcetree
+* Git guidelines
+* Choosing a license
+* Making a wiki for your repository
 
 
 ###Code Peer-Review###
