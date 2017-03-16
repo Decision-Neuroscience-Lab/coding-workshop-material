@@ -1,4 +1,4 @@
-#Decision Neuroscience Lab – Getting Started#
+# Decision Neuroscience Lab – Getting Started #
 
 Written by Dan F 070317
 
