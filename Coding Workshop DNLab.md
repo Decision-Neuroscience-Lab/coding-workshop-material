@@ -4,16 +4,16 @@ This workshop is focused on establishing good practices in the lab regarding how
 
 <br/><br/>
 
-##Outline##
+## Outline ##
 
-###Writing Clear Code###
+### Writing Clear Code ###
 
 * Purpose and examples of clear/unclear code
 * Advice on writing and formatting MATLAB code
 * Lab coding standards and practices
 
 
-###Introduction to Git###
+### Introduction to Git ###
 
 * Introduction to Git
 * Setting up a Git account
@@ -24,14 +24,14 @@ This workshop is focused on establishing good practices in the lab regarding how
 * Making a wiki for your repository
 
 
-###Code Peer-Review###
+### Code Peer-Review ###
 
 * Purpose and benefits
 * Protocols/guidelines
 * Establishing a peer-review process
 
 
-###Introduction to Markdown and Pandoc###
+### Introduction to Markdown and Pandoc ###
 
 * Writing as coding (intro to Markdown)
 * Efficient collaborative writing
@@ -39,59 +39,59 @@ This workshop is focused on establishing good practices in the lab regarding how
 
 <br/><br/>
 
-##Writing Clear Code##
+## Writing Clear Code ##
 
-###Purpose and examples of clear/unclear code###
-
-
-###Advice on writing and formatting MATLAB code###
+### Purpose and examples of clear/unclear code ###
 
 
-###Lab coding standards and practices###
+### Advice on writing and formatting MATLAB code ###
 
 
-<br/><br/>
-
-##Introduction to Git##
-
-###Introduction to Git###
-
-###Setting up a Git account###
-
-###Joining the Decision Neuroscience Lab organisation###
-
-###Useful features of Git (e.g. push, pull, branch) demonstrated in Sourcetree### 
-
-<br/><br/>
-
-##Code Peer-Review##
-
-###Purpose and benefits###
-
-
-
-###Protocols/guidelines###
-
-
-
-###Establishing a peer-review process###
-
-
+### Lab coding standards and practices ###
 
 
 <br/><br/>
 
-##Introduction to Markdown and Pandoc##
+## Introduction to Git ##
+
+### Introduction to Git ###
+
+### Setting up a Git account ###
+
+### Joining the Decision Neuroscience Lab organisation ###
+
+### Useful features of Git (e.g. push, pull, branch) demonstrated in Sourcetree ### 
+
+<br/><br/>
+
+## Code Peer-Review ##
+
+### Purpose and benefits ###
+
+
+
+### Protocols/guidelines ###
+
+
+
+### Establishing a peer-review process ###
+
+
+
+
+<br/><br/>
+
+## Introduction to Markdown and Pandoc ##
  
-###Writing as coding (intro to Markdown)###
+### Writing as coding (intro to Markdown) ###
 
 
 
-###Efficient collaborative writing###
+### Efficient collaborative writing ###
 
 
 
-###Converting across document formats in a simple and effective way (intro to Pandoc)###
+### Converting across document formats in a simple and effective way (intro to Pandoc) ###
  
 
 
