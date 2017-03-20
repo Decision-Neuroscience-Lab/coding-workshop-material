@@ -12,7 +12,7 @@ This workshop is focused on establishing good practices in the lab relating to h
 
 [**Code Peer-Review**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)
 
-[**Introduction to Markdown and Pandoc**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Intro%20to%20Markdown%20and%20Pandoc.md)
+[**Introduction to Markdown and Pandoc**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Intro-to-Markdown-and-Pandoc.md)
 
 
 ## Outline
