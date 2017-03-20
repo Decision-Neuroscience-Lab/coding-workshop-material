@@ -26,9 +26,19 @@ Here is a great [tutorial](www.markdowntutorial.com) for learning markdown, as w
 
 ## Converting across document formats (introduction to Pandoc) ##
 
-Pandoc is a tool for converting documents into different file types. Pandoc is handy if you want to convert your markdown document into a Microsoft Word .docx file, a LaTeX document, a pdf, or something else. There is an [impressive list](http://pandoc.org/index.html) of file types that pandoc can handle. Pandoc also has capabilities for working with a range of citation formats, for example Endnote.
+Pandoc is a tool for converting documents across different file types. Pandoc is handy if you want to convert your markdown document into a Microsoft Word .docx file, a LaTeX document, a pdf, or something else. There is an [impressive list](http://pandoc.org/index.html) of file types that pandoc can handle. Pandoc also has capabilities for working with a range of citation formats, for example Endnote.
 
-Pandoc uses the command line, which means that it does not have a graphical interface. A guide and examples of using pandoc can be found [here](http://pandoc.org/getting-started.html). These commands are simple and well worth learning if you want to embrace markdown as a writing tool!
+You can download Pandoc [here](https://github.com/jgm/pandoc/releases/tag/1.19.2.1), installation instructions can be found [here](http://pandoc.org/installing.html). You can even use Pandoc [in your browser](http://pandoc.org/try/) without installing it on your computer, although the browser version only converts between a limited number of file types. 
+
+
+Pandoc uses the command line, which means that it does not have a graphical interface. A guide to using pandoc can be found [here](http://pandoc.org/getting-started.html). Most conversions can be done with a single command, as shown in this [list of examples](http://pandoc.org/demos.html). There are links to the original and converted files so you can see what your converted files will look like. 
+
+For example, if you want to convert your markdown file into a Microsoft Word .docx document for your supervisor/collaborator/journal:
+
+
+
+
+
 
 <br/><br/>
 
