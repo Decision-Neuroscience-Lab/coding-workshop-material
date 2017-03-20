@@ -29,3 +29,9 @@ Here is a great [tutorial](www.markdowntutorial.com) for learning markdown, as w
 Pandoc is a tool for converting documents into different file types. Pandoc is handy if you want to convert your markdown document into a Microsoft Word .docx file, a LaTeX document, a pdf, or something else. There is an [impressive list](http://pandoc.org/index.html) of file types that pandoc can handle. Pandoc also has capabilities for working with a range of citation formats, for example Endnote.
 
 Pandoc uses the command line, which means that it does not have a graphical interface. A guide and examples of using pandoc can be found [here](http://pandoc.org/getting-started.html). These commands are simple and well worth learning if you want to embrace markdown as a writing tool!
+
+<br/><br/>
+
+<<< [Code Peer-Review](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)						
+
+[Back to workshop overview](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Coding%20Workshop%20DNLab.md)
