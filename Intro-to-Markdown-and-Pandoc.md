@@ -4,11 +4,40 @@ This section of the workshop introduces Markdown (a simple  language designed fo
 <br/><br/>
 
 
-## Writing as coding (introduction to Markdown)
+## Introduction to Markdown
 
 Markdown is a language with simple syntax that is useful for writing clear and well-formatted documents. You can do things like insert headings, make lists and convert words to **bold** and *italic* by inserting symbols such as * or #. These workshop documents were written in in Markdown. If you are viewing this on Github, click 'Raw' to see the Markdown code that produced this text.
 
-There are a variety of Markdown editors which show code and formatted text simultaneously for [Mac](https://macdown.uranusjr.com/) and [Windows](http://markdownpad.com/). You can also edit Markdown documents [in your browser](https://stackedit.io/).
+Markdown was designed so that code for formatting text is simple and does not interfere with readability of the text compared to other languages like html or LaTeX. For example:
+
+```
+We can write **bold text**, _italic text_, or even
+
+1. make
+2. a
+3. list
+
+## We can also create headings
+### Smaller headings
+#### _Or even smaller headings in italics_
+
+
+```
+We can write **bold text**, _italic text_, or even
+
+1. make
+2. a
+3. list
+
+## We can also create headings
+### Smaller headings
+#### _Or even smaller headings in italics_
+
+<br/>
+
+Markdown is also nice because it is read similarly across computers. With the very simple formatting style you do not get strange/unexplained paragraph or line spacing changes that sometimes occur with word documents opened on different computers. Markdown-formatted text could also be generated automatically using other languages. For example, advanced users could write a script which generates the text for a manuscript and automatically inserts the most recent versions of figure image files.
+
+There is a variety of Markdown editors which show code and formatted text simultaneously for [Mac](https://macdown.uranusjr.com/) and [Windows](http://markdownpad.com/). You can also edit Markdown documents [in your browser](https://stackedit.io/).
 
 Here is a great [tutorial](www.markdowntutorial.com) for learning markdown, as well as a [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) in case you forget how to format something.
 
