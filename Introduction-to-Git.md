@@ -1,8 +1,7 @@
 ## Introduction to Git
 This section of the workshop provides a quick tutorial to Git, open source collaboration and version control.
 
-
-(to be updated)
+![git](images/git.png)
 
 ### Introduction to Git
 
@@ -47,7 +46,7 @@ A tutorial for SourceTree can be found [here](https://github.com/GSoft-SharePoin
 
 Most of SourceTree's main working functions can be found in the toolbar, at the top of the interface.
 
-![alt text](images/SourceTreeToolbar.png)
+![SourceTree](images/SourceTreeToolbar.png)
 
 Important Git features:
 
