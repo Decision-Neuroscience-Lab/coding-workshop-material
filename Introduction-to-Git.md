@@ -63,12 +63,14 @@ Important Git features:
 
 **Branch:** A branch is a parallel version of a repository. It exists within the repository, but editing it does not change the master, or primary branch. A separate branch allows you to work on the project without affecting the "master" version. When you are happy with your changes, you can merge your branch with the master branch to publish the changes.
 
+![Branch](images/branch.png)
+
 
 [About Pull Requests (Github)](https://help.github.com/articles/about-pull-requests/)
 
 
 Sources:
-[Github's Git Glossary](https://help.github.com/articles/github-glossary/)
+[Github's Git Glossary](https://help.github.com/articles/github-glossary/),
 [The Official Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 
 Useful links on how to use SourceTree:
