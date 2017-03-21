@@ -5,6 +5,7 @@ This section of the workshop provides a quick tutorial to Git, open source colla
 
 ### Introduction to Git
 
+
 Some resources:
 
 [Getting started/hello world activity](https://guides.github.com/activities/hello-world/)
@@ -50,15 +51,15 @@ Most of SourceTree's main working functions can be found in the toolbar, at the 
 
 Important Git features:
 
-Clone: A clone is a copy of the repository that exists on your computer, instead of on a web server. It also refers to the act of duplicating the copy. After cloning, you can edit the files on your computer even when offline, and sync them when you are back online.
+**Clone:** A clone is a copy of the repository that exists on your computer, instead of on a web server. It also refers to the act of duplicating the copy. After cloning, you can edit the files on your computer even when offline, and sync them when you are back online.
 
-Commit: A commit is an individual change to a file or repository. It allows you to keep a record of what changes were made, and by who. A commit usually comes with a short message, where you can type a mini description about what you changed.
+**Commit:** A commit is an individual change to a file or repository. It allows you to keep a record of what changes were made, and by who. A commit usually comes with a short message, where you can type a mini description about what you changed.
 
-Pull: Pull refers to when you are bringing in previous changes, and merging them to your copy. For example, after someone edits a file from the last time you've seen the repository, you would want to update these changes before making any further changes yourself.
+**Pull:** Pull refers to when you are bringing in previous changes, and merging them to your copy. For example, after someone edits a file from the last time you've seen the repository, you would want to update these changes before making any further changes yourself.
 
-Push: Pushing refers to uploading your committed changes onto your repository, on a server such as Github or Bit Bucket. Once you push the changes you make, others can see them.
+**Push:** Pushing refers to uploading your committed changes onto your repository, on a server such as Github or Bit Bucket. Once you push the changes you make, others can see them.
 
-Pull request: Pull requests are proposed changes, or change requests, that can be either accepted or rejected by the repository's collaborator.
+**Pull request:** Pull requests are proposed changes, or change requests, that can be either accepted or rejected by the repository's collaborator.
 
 [About Pull Requests (Github)](https://help.github.com/articles/about-pull-requests/)
 
