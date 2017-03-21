@@ -1,14 +1,14 @@
 # Introduction to Markdown and Pandoc
 
-This section of the workshop introduces Markdown (a simple  language designed for easy formatting of documents) and Pandoc (a program that converts between document types). You can use Markdown and Pandoc to collaboratively write documents and track text modifications. Markdown is also excellent for noting down ideas and writing guides for experiments or analyses.
-<br/><br/>
+This section of the workshop introduces Markdown (a simple  language designed for easy formatting of documents) and Pandoc (a program that converts between document types). You can use Markdown and Pandoc to collaboratively write documents and track text modifications. Markdown is also excellent for noting down ideas or writing guides for experiments and analyses.
 
+<br/>
 
 ## Introduction to Markdown
 
-Markdown is a language with simple syntax that is useful for writing clear and well-formatted documents. You can do things like insert headings, make lists and convert words to **bold** and *italic* by inserting symbols such as * or #. These workshop documents were written in in Markdown. If you are viewing this on Github, click 'Raw' to see the Markdown code that produced this text.
+Markdown is a language with simple syntax that is useful for writing clear and well-formatted documents. You can do things like insert headings, make lists, and convert words to **bold** and *italic* by inserting symbols such as * or #. 
 
-Markdown was designed so that code for formatting text is simple and does not interfere with readability of the text compared to other languages like html or LaTeX. For example:
+Markdown was designed to use simple syntax that does not interfere with readability of the text. The code shows your writing more clearly than to other languages like HTML or LaTeX. For example:
 
 ```
 We can write **bold text**, _italic text_, or even
@@ -35,9 +35,11 @@ We can write **bold text**, _italic text_, or even
 
 <br/>
 
-Markdown is also nice because it is read similarly across computers. With the very simple formatting style you do not get strange/unexplained paragraph or line spacing changes that sometimes occur with word documents opened on different computers. Markdown-formatted text could also be generated automatically using other languages. For example, advanced users could write a script which generates the text for a manuscript and automatically inserts the most recent versions of figure image files.
+These workshop documents were written in in Markdown. If you are viewing this on Github, click 'Raw' to see the Markdown code that produced this text.
 
-There is a variety of Markdown editors which show code and formatted text simultaneously for [Mac](https://macdown.uranusjr.com/) and [Windows](http://markdownpad.com/). You can also edit Markdown documents [in your browser](https://stackedit.io/).
+Markdown is also nice because it is interpreted similarly across computers. With the very simple formatting style you do not get strange/unexplained paragraph or line spacing changes that sometimes occur with word documents (for example when MS Word documents written in Windows are opened on a Mac). Markdown formatted text can also be generated automatically using other programming languages. For example, advanced users could write a script which generates the text for a manuscript and automatically inserts the most recent versions of figure image files.
+
+There are Markdown editors which show code and formatted text simultaneously for [Mac](https://macdown.uranusjr.com/) and [Windows](http://markdownpad.com/). You can also edit Markdown documents [in your browser](https://stackedit.io/).
 
 Here is a great [tutorial](www.markdowntutorial.com) for learning markdown, as well as a [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) in case you forget how to format something.
 
@@ -67,7 +69,7 @@ Pandoc is a tool for converting documents across different file types. For examp
 
 You can download Pandoc [here](https://github.com/jgm/pandoc/releases/tag/1.19.2.1), and installation instructions can be found [here](http://pandoc.org/installing.html). You can even use Pandoc [in your browser](http://pandoc.org/try/) without installing it on your computer, although the browser version only converts between a limited number of file types. 
 
-Pandoc uses the command line, which means that it does not have a graphical interface. A guide to using pandoc can be found [here](http://pandoc.org/getting-started.html). Most conversions can be done with a single command, as shown in this [list of examples](http://pandoc.org/demos.html). The list of examples contains links to the original and converted files, so you can see what your converted files will look like. 
+Pandoc uses the command line, which means that it does not have a graphical interface. A guide to using pandoc can be found [here](http://pandoc.org/getting-started.html). Most conversions can be done with a single command, as shown in this [list of examples](http://pandoc.org/demos.html). This list contains links to the original and converted files, so you can see what your converted files might look like. 
 
 As an example, you can convert this markdown file into a Microsoft Word .docx document by doing the following:
 
@@ -81,7 +83,7 @@ The -f and -t parts tell pandoc which file types to convert between. The -o part
 
 A handy list of commands is available in the [user guide](http://pandoc.org/MANUAL.html) or by entering `pandoc --help` into the command line.
 
-
+By using Markdown with Pandoc you can quickly and easily format your writing, keep track of your edits like you would with code, and convert your text into a manuscript in .docx or LaTeX format for your collaborators. By using Markdown with Git you also have a complete history of your writing process, and an easy way to backup your documents to a private repository in the cloud.
 
 <br/><br/>
 
