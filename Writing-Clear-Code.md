@@ -24,10 +24,16 @@ It is also easier for others to understand your variables and functions.
 
 - Make good use of comments, but avoid super-obvious ones.
 
+- Adopt a guideline for variable usage and commenting style.
+
+- It's nice to line up equal signs, spaces, and commas; this helps a lot with spotting errors.
+
 - Have consistent indentation and styling. Styling is a personal preference, but keeping the styling consistent
-makes it easier to read!
+makes it easier to read.
 
 - Keep functions small! They can be reused for other functions. It also helps make it easier to read.
+
+- If possible, try to keep lines short by using ellipsis (...)
 
 - Large indents can help late at night when those 2-space indents are hard to see.
 
