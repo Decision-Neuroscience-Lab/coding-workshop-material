@@ -8,13 +8,29 @@ Some links to start out:
 
 [Minimizing bugs in Cognitive Neuroscience programming](http://journal.frontiersin.org/article/10.3389/fpsyg.2014.01435/full)
 
-[Writing Clear Code - Princeton University Computer Science](http://introcs.cs.princeton.edu/java/11style/)
+[Writing Clear Code - Princeton University](http://introcs.cs.princeton.edu/java/11style/)
+
+[Top MATLAB 10 Practices that make me cry](https://blogs.mathworks.com/videos/2010/03/08/top-10-matlab-code-practices-that-make-me-cry/)
 
 [IBM - Six Ways to Write more Comprehensible Code](https://www.ibm.com/developerworks/library/l-clear-code/)
 
 [Top 15+ Best Practices for Writing Super Readable Code](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)
 
 ### Purpose and examples of clear/unclear code ###
+
+Purposes:
+
+- Clean code is easy to read
+
+- Makes it easier to pass your project on to the next person
+
+- Easier for yourself/others to spot an error, and debug it early.
+
+- Allows for easier collaboration,less confusion among teammates.
+
+Example of unclear code:
+
+Example of clear code:
 
 
 ### Advice on writing and formatting MATLAB code ###
