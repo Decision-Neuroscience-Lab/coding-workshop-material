@@ -93,7 +93,7 @@ These are based on older versions of SourceTree, but the functions should still 
 
 
 
-###Navigation
+### Navigation
 
 <<< [Writing Clear Code](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Writing-Clear-Code.md)
 
