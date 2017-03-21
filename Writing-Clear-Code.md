@@ -4,6 +4,8 @@ Some links to start out:
 
 [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
 
+[Minimizing bugs in cognitive neuroscience programming](http://journal.frontiersin.org/article/10.3389/fpsyg.2014.01435/full)
+
 [Writing Clear Code - Princeton University Computer Science](http://introcs.cs.princeton.edu/java/11style/)
 
 [IBM - Six Ways to Write more Comprehensible Code](https://www.ibm.com/developerworks/library/l-clear-code/)
