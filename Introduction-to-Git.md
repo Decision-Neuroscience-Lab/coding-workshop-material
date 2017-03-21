@@ -31,6 +31,8 @@ Also, Github offers [free private repositories](https://education.github.com/pac
 
 Create a Github account. This will allow you to be added to the Decision Neuroscience Lab group and contribute to code for experiments and analyses. You can do this at [github.com](https://github.com).
 
+![githubsignup](images/Githubsignup.png)
+
 
 ### Joining the Decision Neuroscience Lab organisation
 
@@ -61,24 +63,37 @@ Important Git features:
 
 **Pull request:** Pull requests are proposed changes, or change requests, that can be either accepted or rejected by the repository's collaborator.
 
-**Branch:** A branch is a parallel version of a repository. It exists within the repository, but editing it does not change the master, or primary branch. A separate branch allows you to work on the project without affecting the "master" version. When you are happy with your changes, you can merge your branch with the master branch to publish the changes.
-
-![Branch](images/branch.png)
-
 
 [About Pull Requests (Github)](https://help.github.com/articles/about-pull-requests/)
 
 
+[Making pull requests on BitBucket](https://www.atlassian.com/git/tutorials/making-a-pull-request)
+
+**Branch:** A branch is a parallel version of a repository. It exists within the repository, but editing it does not change the master, or primary branch. A separate branch allows you to work on the project without affecting the "master" version. When you are happy with your changes, you can **merge** your branch with the master branch to publish the changes.
+
+![Branch](images/branch.png)
+
+
+
 Sources:
-[Github's Git Glossary](https://help.github.com/articles/github-glossary/),
+
+[Github's Git Glossary](https://help.github.com/articles/github-glossary/)
+
 [The Official Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 
 Useful links on how to use SourceTree:
+
 [Cloning a repository into SourceTree](https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html)
+
 [Commit, push and pull a repository in SourceTree](https://confluence.atlassian.com/sourcetreekb/commit-push-and-pull-a-repository-on-sourcetree-785616067.html)
 
+[Branch Management](https://confluence.atlassian.com/sourcetreekb/branch-management-785325799.html)
 
-<br/><br/>
+These are based on older versions of SourceTree, but the functions should still work the same way
+
+
+
+###Navigation
 
 <<< [Writing Clear Code](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Writing-Clear-Code.md)
 
