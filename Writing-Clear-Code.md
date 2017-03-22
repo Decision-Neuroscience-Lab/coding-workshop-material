@@ -31,7 +31,11 @@ Some links to start out:
 
 ### Example of unclear code:
 
+*TODO Cheng can you please make a section of code and then modify it to break all of rules outlined below, to make the ugliest piece of code imaginable!*
+
 ### Example of clear code:
+
+*TODO Cheng can you please use the same section of code, but fix all of the problems with the ugly code to make code which is beautiful and easy to understand*
 
 ## Advice on writing and formatting MATLAB code
 
@@ -240,7 +244,7 @@ Feel free to use other variable/structure/function naming conventions in your ow
 
 Different naming conventions may work best with different programming languages. If you have a good style for R or Python please let us know or add this to the workshop wiki!
 
-<br/><br/>
+## Navigation
 
 [Introduction to Git](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Introduction-to-Git.md) >>>
 

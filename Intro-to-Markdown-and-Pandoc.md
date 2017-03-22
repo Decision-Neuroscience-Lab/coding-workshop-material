@@ -85,7 +85,8 @@ A handy list of commands is available in the [user guide](http://pandoc.org/MANU
 
 By using Markdown with Pandoc you can quickly and easily format your writing, keep track of your edits like you would with code, and convert your text into a manuscript in .docx or LaTeX format for your collaborators. By using Markdown with Git you also have a complete history of your writing process, and an easy way to backup your documents to a private repository in the cloud.
 
-<br/><br/>
+
+## Navigation
 
 <<< [Code Peer-Review](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)						
 

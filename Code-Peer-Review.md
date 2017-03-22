@@ -1,19 +1,19 @@
-## Code Peer-Review ##
+## Code Peer-Review
 
-### Purpose and benefits ###
-
-
-
-### Protocols/guidelines ###
+### Purpose and benefits
 
 
 
-### Establishing a peer-review process ###
+### Protocols/guidelines
+
+
+
+### Establishing a peer-review process
 
 
 
 
-<br/><br/>
+## Navigation
 
 <<< [Introduction to Git](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Writing-Clear-Code.md)
 				
