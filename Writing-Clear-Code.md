@@ -1,4 +1,4 @@
-## Writing Clear Code ##
+# Writing Clear Code
 
 ![Bad Code](images/badcodememe.png)
 
@@ -16,9 +16,9 @@ Some links to start out:
 
 [Top 15+ Best Practices for Writing Super Readable Code](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)
 
-### Purpose and examples of clear/unclear code ###
+## Purpose and examples of clear/unclear code
 
-Purposes:
+### Purposes:
 
 - Clean code is easy to read
 
@@ -26,14 +26,15 @@ Purposes:
 
 - Easier for yourself/others to spot an error, and debug it early.
 
-- Allows for easier collaboration,less confusion among teammates.
-
-Example of unclear code:
-
-Example of clear code:
+- Allows for easier collaboration, less confusion among teammates.
 
 
-### Advice on writing and formatting MATLAB code ###
+### Example of unclear code:
+
+### Example of clear code:
+
+
+## Advice on writing and formatting MATLAB code
 
 - Use long variable names with underscores (HELLO_DECISION_NEUROSCIENCE_LAB) to avoid lengthy documentation.
 It is also easier for others to understand your variables and functions.
@@ -55,7 +56,7 @@ makes it easier to read.
 
 Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
 
-### Lab coding standards and practices ###
+## Lab coding standards and practices
 
 
 
