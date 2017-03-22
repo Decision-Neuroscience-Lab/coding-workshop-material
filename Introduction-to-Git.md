@@ -75,13 +75,13 @@ Most of SourceTree's main working functions can be found in the toolbar, at the 
 
 
 
-Sources:
+### Sources:
 
 [Github's Git Glossary](https://help.github.com/articles/github-glossary/)
 
 [The Official Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 
-Useful links on how to use SourceTree:
+### Useful links on how to use SourceTree:
 
 [Cloning a repository into SourceTree](https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html)
 
