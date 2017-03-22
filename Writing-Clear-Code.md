@@ -63,10 +63,81 @@ Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/G
 ### Create informative variable names
 More generally, it is good practice to make your variable names as informative as possible. For example, rather than ‘path’ you could use the variable ‘filePath’ or ‘dataFilePath’ or ‘saveFilePath’. This helps anyone reading the code (including your future self) understand what each variable refers to without needing to see how it was defined earlier in the code. 
 
-Another example would be replacing `maxf` with something like `maxForce` or `tstart` with `startTime`. However it is good not to make variable names too long (for example `maxForceForThisTrialInBlock1`) as they become difficult to read. The best balance is a succinct variable name that is still easily understood in the context of the code. When in doubt, always err towards longer variable names if it makes them easier to understand. ### Write informative comments
+Another example would be replacing `maxf` with something like `maxForce` or `tstart` with `startTime`. However it is good not to make variable names too long (for example `maxForceForThisTrialInBlock1`) as they become difficult to read. The best balance is a succinct variable name that is still easily understood in the context of the code. When in doubt, always err towards longer variable names if it makes them easier to understand. ### Write informative comments
 It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code). Using informative variable names and comments also contributes to an important secondary purpose of writing code: to show how an operation or calculation is performed. Clear code can be more easily modified and is easier adapt for use in other scripts, functions or projects. 
 
 *TODO include examples of informative comments*
+
+
+
+### Include units of measurement in variable names of comments
+
+A frustrating part of reading or editing stimulus presentation or analysis scripts is that variables are often defined without stating their unit of measurement. Sometimes you cannot know which unit of measurement is used without running the script or looking at the data. For example, were reaction times recorded in seconds or milliseconds? Did the accuracy variable refer to the number or percentage of correctly-responded trials? Sometimes the unit of measurement will be obvious, but in many cases it will not.
+
+This problem can be avoided by appending the unit of measurement to the variable name, or by adding a comment. For example:
+
+```
+minReactionTime = 1.2; % in seconds
+minReactionTimeSeconds = 1.2;
+minReactionTime_ms = 1200;
+
+accuracy % number of correct trials
+percentAccuracy
+
+distanceToScreen = 60; % in cm
+distanceToScreen_cm = 60;
+```
+
+### Use informative loop indices
+
+When we are first taught to code we see a lot of examples like this:
+
+```
+for i = 1:100
+	for j = 1:5
+	
+		k = j + i;
+		exampleMatrix(i, j) = k;
+		
+	end % of for j
+end % of for i
+```
+
+This example uses indices `i` and `j` for loops, which have been standard in programming for [quite a long time](http://softwareengineering.stackexchange.com/questions/86904/why-do-most-of-us-use-i-as-a-loop-counter-variable). Because of these examples we often use `i` and `j` for loops in our experiment and analysis scripts. We can improve on this by making our loop indices more informative or specific. For example: 
+
+```
+for i = 1:nBlocks
+	for j = 1:nTrials
+
+		trialType = conditionsByTrial(i, j)
+		
+		if i == 1 % if block 1
+			stimulusContrast = 10;
+		elseif i == 2 % if block 2
+			stimulusContrast = 50;
+		end % of if i
+
+	end % of for j
+end % of for i
+```
+
+is not quite as clear as this:
+
+```
+for block = 1:nBlocks
+	for trial = 1:nTrials
+
+		trialType = conditionsByTrial(block, trial)
+		
+		if block == 1
+			stimulusContrast = 10;
+		elseif block == 2
+			stimulusContrast = 50;
+		end % of if block
+
+	end % of for trial
+end % of for block
+```
 
 ### Define hard-coded variables at the beginning of the script
 Wherever possible ‘hard-coded’ variables (values that are defined in the code but are often adjusted or changed) should be defined at the top of the script. This makes it easy to keep track of variables without digging through the bulk of the code in order to find them.
@@ -100,7 +171,49 @@ Using commas followed by spaces is also very useful for delineating elements of 
 ```exampleVector = [1 333 4 55 3+1 42/55 111];
 
 exampleVector = [1, 333, 4, 55, 3+1, 42/55, 111];store_rt_data(meanRT,medianRT+1,modeRT,stdevRT/sqrt(nSubjects))store_rt_data(meanRT, medianRT + 1, modeRT, stdevRT / sqrt(nSubjects))```
-You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:`A = sqrt(B+10) / mean(C-2) + D^2` 
+You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:`A = sqrt(B+10) / mean(C-2) + D^2` ### Separate commands into different lines
+
+Some people like to collapse several simple operations into the same line of code. A common example in MATLAB scripts is:
+
+```
+% Housekeeping
+clear all; close all; clc;
+```
+
+compared to:
+
+```
+% Houskeeping
+clear all;
+close all;
+clc;
+```
+This is done to save space and reduce the number of lines in the code. While the example above is common and easily understood, your code can become difficult to read when this is done often. This is because most people are accustomed to seeing each operation in a separate line of code.
+
+For example:
+
+```
+% All collapsed into one line
+A = 2; B = 5; C = (A + B) / 2; fprintf(C);
+```
+is more difficult to understand than
+
+```
+% Separated into separate lines
+A = 2;
+B = 5;
+C = (A + B) / 2;
+fprintf(C);
+```
+
+### Note unfinished tasks with TODO
+
+Sometimes you will need to defer writing some parts of a script/function until later, and want to make a note of what needs to be done (and where in the script to do it). Using a special word to signify unfinished tasks (most commonly TODO) allows you to easily find unfinished sections by using the search function in the MATLAB editor. For example:
+
+```
+stimulusDuration = 1; % TODO adjust to be an exact multiple of the monitor refresh duration
+
+```
 
 ### Further reading
 
