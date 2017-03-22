@@ -62,7 +62,7 @@ If you feel particularly passionate about code formatting then you might want to
 ## Lab coding standards and practices
 
 
-**Variable naming**
+### Variable naming
 Different projects use different naming conventions for variables, structures and functions in MATLAB. For example:
 `VariableName`
 `variableName``variable_name``Variable_Name``Structure.VariableName``structure.variable_name``VARIABLENAME``VARIABLE_NAME`
