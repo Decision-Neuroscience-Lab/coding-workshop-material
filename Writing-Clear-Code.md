@@ -18,7 +18,7 @@ Some links to start out:
 
 ## Purpose and examples of clear/unclear code 
 
-Purposes:
+### Purposes:
 
 - Clean code is easy to read
 
@@ -26,12 +26,12 @@ Purposes:
 
 - Easier for yourself/others to spot an error, and debug it early.
 
-- Allows for easier collaboration,less confusion among teammates.
+- Allows for easier collaboration, less confusion among teammates.
 
-Example of unclear code:
 
-Example of clear code:
+### Example of unclear code:
 
+### Example of clear code:
 
 ## Advice on writing and formatting MATLAB code
 

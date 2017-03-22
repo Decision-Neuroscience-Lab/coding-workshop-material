@@ -1,9 +1,9 @@
-## Introduction to Git
+# Introduction to Git
 This section of the workshop provides a quick tutorial to Git, open source collaboration and version control.
 
 ![git](images/smallgit.png)
 
-### Introduction to Git
+## Introduction to Git
 
 
 Some resources:
@@ -27,39 +27,47 @@ When first using Git I would recommend making some test repositories (see the â€
 Also, Github offers [free private repositories](https://education.github.com/pack) for all students, so that you can upload your own code and protect it from prying eyes.
 
 
-### Setting up a Git account
+## Setting up a Git account
 
 Create a Github account. This will allow you to be added to the Decision Neuroscience Lab group and contribute to code for experiments and analyses. You can do this at [github.com](https://github.com).
 
 ![githubsignup](images/Githubsignup.png)
 
 
-### Joining the Decision Neuroscience Lab organisation
+## Joining the Decision Neuroscience Lab organisation
 
 Get added to a team in the Decision Neuroscience Lab organisation. This is an account which hosts code for completed and in-progress projects. Ask Daniel F or Will and they will add you to the organisation. The organisation Github page can be found [here](https://github.com/Decision-Neuroscience-Lab).
 
-### Download and install an application that interfaces with Git
+## Download and install an application that interfaces with Git
 
 Download and install an application that interfaces with Git. Which program you use depends on your personal preferences. Some popular programs are [SourceTree](www.sourcetreeapp.com/) and [TortoiseGit](https://tortoisegit.org/) (but please send me recommendations of other good alternatives). For this project I would recommend SourceTree as it is relatively easy to learn.
 
 A tutorial for SourceTree can be found [here](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow).
 
 
-### Useful features of Git (e.g. push, pull, branch) demonstrated in Sourcetree
+## Useful features of Git (e.g. push, pull, branch) demonstrated in Sourcetree
 
 Most of SourceTree's main working functions can be found in the toolbar, at the top of the interface.
 
 ![SourceTree](images/SourceTreeToolbar.png)
 
-Important Git features:
+### Important Git features:
 
 **Clone:** A clone is a copy of the repository that exists on your computer, instead of on a web server. It also refers to the act of duplicating the copy. After cloning, you can edit the files on your computer even when offline, and sync them when you are back online.
 
 **Commit:** A commit is an individual change to a file or repository. It allows you to keep a record of what changes were made, and by who. A commit usually comes with a short message, where you can type a mini description about what you changed.
 
+![Commits](images/Branchchanges.png)
+
+![Commits](images/textchanges.png)
+
+(Examples of commits and changes you can view on the SourceTree app)
+
 **Pull:** Pull refers to when you are bringing in previous changes, and merging them to your copy. For example, after someone edits a file from the last time you've seen the repository, you would want to update these changes before making any further changes yourself.
 
 **Push:** Pushing refers to uploading your committed changes onto your repository, on a server such as Github or Bit Bucket. Once you push the changes you make, others can see them.
+
+![Push](images/gitpush.png)
 
 **Pull request:** Pull requests are proposed changes, or change requests, that can be either accepted or rejected by the repository's collaborator.
 
@@ -75,13 +83,13 @@ Important Git features:
 
 
 
-Sources:
+### Sources:
 
 [Github's Git Glossary](https://help.github.com/articles/github-glossary/)
 
 [The Official Git Glossary](https://www.kernel.org/pub/software/scm/git/docs/gitglossary.html)
 
-Useful links on how to use SourceTree:
+### Useful links on how to use SourceTree:
 
 [Cloning a repository into SourceTree](https://confluence.atlassian.com/sourcetreekb/clone-a-repository-into-sourcetree-780870050.html)
 
@@ -93,7 +101,7 @@ These are based on older versions of SourceTree, but the functions should still 
 
 
 
-### Navigation
+## Navigation
 
 <<< [Writing Clear Code](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Writing-Clear-Code.md)
 
