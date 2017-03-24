@@ -34,17 +34,25 @@ Some links to start out:
 *TODO Cheng can you please make a section of code and then modify it to break all of rules outlined below, to make the ugliest piece of code imaginable!*
 
 ```
+
+% print output
+A=2; B=5; C=(A+B)/2; fprintf(C);
+
 % reaction times
-mRT = 1.2;
-mRTs = 1.2;
-mRT_ms = 1200;
+mRT=1.2; mRTs=1.2; mRT_ms=1200;
 
 accuracy
 percentAccuracy
 
 % distances
-dist2S = 60;
-dist2S_cm = 60;
+dist2S=60; dist2S_c=60;
+
+if variableA>variableB&&variableC>variableD
+		while variableA>200
+				variableA=variableA+1
+		end
+end
+
 ```
 
 
