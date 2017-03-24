@@ -93,6 +93,22 @@ Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/G
 Another example would be replacing `maxf` with something like `maxForce` or `tstart` with `startTime`. However it is good not to make variable names too long (for example `maxForceForThisTrialInBlock1`) as they become difficult to read. The best balance is a succinct variable name that is still easily understood in the context of the code. When in doubt, always err towards longer variable names if it makes them easier to understand.### Write informative comments
 It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code).Using informative variable names and comments also contributes to an important secondary purpose of writing code: to show how an operation or calculation is performed. Clear code can be more easily modified and is easier adapt for use in other scripts, functions or projects.
 
+However, try to avoid commenting on very obvious things which can easily be inferred just by looking at the code. People differ with respect to the amount of detail they put into comments, and it may take some time to find the right balance between informing the reader and over-explaining your code. If others keep coming to you and asking what certain sections of your code mean, then this is an indication that your comments are not clear enough.
+
+Here are some bad examples, which are both uninformative and redundant:
+
+```
+% delete
+clear reactionTimes;
+clear percentAccuracy;
+
+% do the calculation
+visAngleImage = imageSize_cm / distanceFromScreen_cm *
+
+
+
+```
+
 *TODO include examples of informative comments*
 
 
@@ -238,7 +254,7 @@ fprintf(C);
 Sometimes you will need to defer writing some parts of a script/function until later, and want to make a note of what needs to be done (and where in the script to do it). Using a special word to signify unfinished tasks (most commonly TODO) allows you to easily find unfinished sections by using the search function in the MATLAB editor. For example:
 
 ```
-stimulusDuration = 1; % TODO adjust to be an exact multiple of the monitor refresh duration
+stimulusDuration_ms = 500; % TODO adjust to be an exact multiple of the monitor refresh duration
 
 ```
 

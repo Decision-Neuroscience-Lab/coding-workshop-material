@@ -1,6 +1,6 @@
 # Decision Neuroscience Lab Coding Practices Workshop
 
-This workshop is focused on establishing good practices in the lab relating to how we write, share and evaluate code. Some useful pieces of software are also introduced to make it easier to find bugs and manage your code. Collaborative programming and writing practices are also described, which might be useful when working with overseas collaborators or on team-based projects.
+This workshop is focused on establishing good practices in the lab relating to how we write, share and evaluate code. Some useful pieces of software are also introduced to make it easier to find bugs and manage your code. Collaborative programming and writing practices are also described, which may be useful when working with overseas collaborators or on team-based projects.
 
 <br/>
 
@@ -10,7 +10,7 @@ This workshop is focused on establishing good practices in the lab relating to h
 
 [**Introduction to Git**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Introduction-to-Git.md)
 
-[**Code Peer-Review**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)
+[**Code Review**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)
 
 [**Introduction to Markdown and Pandoc**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Intro-to-Markdown-and-Pandoc.md)
 
@@ -35,18 +35,17 @@ This workshop is focused on establishing good practices in the lab relating to h
 * Making a wiki for your repository
 
 
-### Code Peer-Review
+### Code Review
 
-* Purpose and benefits
-* Protocols/guidelines
-* Establishing a peer-review process
-
+* What is code review?
+* Why do we need code reviews in science?
+* Protocol and guidelines
 
 ### Introduction to Markdown and Pandoc
 
-* Writing as coding (intro to Markdown)
-* Efficient collaborative writing
-* Converting across document formats in a simple and effective way (intro to Pandoc)
+* Introduction to Markdown
+* Collaborative writing
+* Converting across document formats (introduction to Pandoc)
 
  
 
