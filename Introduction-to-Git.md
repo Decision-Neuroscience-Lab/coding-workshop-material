@@ -5,6 +5,9 @@ This section of the workshop provides a quick tutorial to Git, open source colla
 
 ## Introduction to Git
 
+### What is Git?
+To be updated with brief explaination of git.
+
 
 Some resources:
 
