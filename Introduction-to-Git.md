@@ -6,7 +6,7 @@ This section of the workshop provides a quick tutorial to Git, open source colla
 ## Introduction to Git
 
 ### What is Git?
-To be updated with brief explaination of git.
+Founded in 2005 by Linus Torvalds, Git is currently the most widely used version control system. Many organisations and official projects use Git as a system for collaboration and version control. Git also allows for people to work on casual open source projects, where anyone on the internet can contribute to a person's existing code, or duplicate a copy to play around on their own. As a collaborative tool, Git allows each developer or collaborator to have a working copy of a repository, from which they can pull (download) or push (upload) new changes to the master copy.
 
 
 Some resources:
