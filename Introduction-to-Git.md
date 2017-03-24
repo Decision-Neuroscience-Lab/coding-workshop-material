@@ -29,18 +29,28 @@ Also, Github offers [free private repositories](https://education.github.com/pac
 
 ## Setting up a Git account
 
+### Github
+
 Create a Github account. This will allow you to be added to the Decision Neuroscience Lab group and contribute to code for experiments and analyses. You can do this at [github.com](https://github.com).
 
 ![githubsignup](images/Githubsignup.png)
 
+### BitBucket
+
+The lab will be hosting projects on BitBucket in the future. When you create a BitBucket account, use a **.edu** email to get unlimited private repositories. You can do this at [bitbucket.org](https://bitbucket.org)
+
 
 ## Joining the Decision Neuroscience Lab organisation
 
-Get added to a team in the Decision Neuroscience Lab organisation. This is an account which hosts code for completed and in-progress projects. Ask Daniel F or Will and they will add you to the organisation. The organisation Github page can be found [here](https://github.com/Decision-Neuroscience-Lab).
+Get added to a team in the Decision Neuroscience Lab organisation. This is an account which hosts code for completed and in-progress projects. Ask Daniel F or Will and they will add you to the organisation.
+
+The organisation Github page can be found [here](https://github.com/Decision-Neuroscience-Lab).
+
+The organisation Bitbucket page can be found [here](https://bitbucket.org/Decision-Neuroscience-Lab/)
 
 ## Download and install an application that interfaces with Git
 
-Download and install an application that interfaces with Git. Which program you use depends on your personal preferences. Some popular programs are [SourceTree](www.sourcetreeapp.com/) and [TortoiseGit](https://tortoisegit.org/) (but please send me recommendations of other good alternatives). For this project I would recommend SourceTree as it is relatively easy to learn.
+Download and install an application that interfaces with Git. Which program you use depends on your personal preferences. Some popular programs are [SourceTree](www.sourcetreeapp.com/), [Github Desktop](https://desktop.github.com/) and [TortoiseGit](https://tortoisegit.org/) (but please send me recommendations of other good alternatives). For this project I would recommend SourceTree as it is relatively easy to learn.
 
 A tutorial for SourceTree can be found [here](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow).
 
