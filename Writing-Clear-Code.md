@@ -34,13 +34,15 @@ Some links to start out:
 *TODO Cheng can you please make a section of code and then modify it to break all of rules outlined below, to make the ugliest piece of code imaginable!*
 
 ```
+% reaction times
 mRT = 1.2;
 mRTs = 1.2;
 mRT_ms = 1200;
 
-accuracy 
+accuracy
 percentAccuracy
 
+% distances
 dist2S = 60;
 dist2S_cm = 60;
 ```
