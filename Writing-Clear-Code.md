@@ -16,7 +16,7 @@ Some links to start out:
 
 [Top 15+ Best Practices for Writing Super Readable Code](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)
 
-## Purpose and examples of clear/unclear code 
+## Purpose and examples of clear/unclear code
 
 ### Purposes:
 
@@ -32,6 +32,19 @@ Some links to start out:
 ### Example of unclear code:
 
 *TODO Cheng can you please make a section of code and then modify it to break all of rules outlined below, to make the ugliest piece of code imaginable!*
+
+```
+mRT = 1.2;
+mRTs = 1.2;
+mRT_ms = 1200;
+
+accuracy 
+percentAccuracy
+
+dist2S = 60;
+dist2S_cm = 60;
+```
+
 
 ### Example of clear code:
 
@@ -62,13 +75,13 @@ Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/G
 
 
 
-### Avoid variable names that are similar to function namesMATLAB has a wide variety of available functions. Some of these functions may share the same name with variables that you want to use in your code. For example, ‘path’ is a variable name that might be used to denote a file save location in a script, but is also a MATLAB function. When a MATLAB function name is used as a variable, that function will stop working in that script (which can cause unforseen problems). Wherever possible use variable names that are unlikely to have the same name as MATLAB functions.Similarly, try to avoid generic programming terms like ‘dir’ for variable names. If in doubt, enter `which ` or `help ` followed by the variable name into the command line, to see if an existing function shares the same name as your variable. 
+### Avoid variable names that are similar to function namesMATLAB has a wide variety of available functions. Some of these functions may share the same name with variables that you want to use in your code. For example, ‘path’ is a variable name that might be used to denote a file save location in a script, but is also a MATLAB function. When a MATLAB function name is used as a variable, that function will stop working in that script (which can cause unforseen problems). Wherever possible use variable names that are unlikely to have the same name as MATLAB functions.Similarly, try to avoid generic programming terms like ‘dir’ for variable names. If in doubt, enter `which ` or `help ` followed by the variable name into the command line, to see if an existing function shares the same name as your variable.
 
 ### Create informative variable names
-More generally, it is good practice to make your variable names as informative as possible. For example, rather than ‘path’ you could use the variable ‘filePath’ or ‘dataFilePath’ or ‘saveFilePath’. This helps anyone reading the code (including your future self) understand what each variable refers to without needing to see how it was defined earlier in the code. 
+More generally, it is good practice to make your variable names as informative as possible. For example, rather than ‘path’ you could use the variable ‘filePath’ or ‘dataFilePath’ or ‘saveFilePath’. This helps anyone reading the code (including your future self) understand what each variable refers to without needing to see how it was defined earlier in the code.
 
-Another example would be replacing `maxf` with something like `maxForce` or `tstart` with `startTime`. However it is good not to make variable names too long (for example `maxForceForThisTrialInBlock1`) as they become difficult to read. The best balance is a succinct variable name that is still easily understood in the context of the code. When in doubt, always err towards longer variable names if it makes them easier to understand. ### Write informative comments
-It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code). Using informative variable names and comments also contributes to an important secondary purpose of writing code: to show how an operation or calculation is performed. Clear code can be more easily modified and is easier adapt for use in other scripts, functions or projects. 
+Another example would be replacing `maxf` with something like `maxForce` or `tstart` with `startTime`. However it is good not to make variable names too long (for example `maxForceForThisTrialInBlock1`) as they become difficult to read. The best balance is a succinct variable name that is still easily understood in the context of the code. When in doubt, always err towards longer variable names if it makes them easier to understand.### Write informative comments
+It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code).Using informative variable names and comments also contributes to an important secondary purpose of writing code: to show how an operation or calculation is performed. Clear code can be more easily modified and is easier adapt for use in other scripts, functions or projects.
 
 *TODO include examples of informative comments*
 
@@ -99,22 +112,22 @@ When we are first taught to code we see a lot of examples like this:
 ```
 for i = 1:100
 	for j = 1:5
-	
+
 		k = j + i;
 		exampleMatrix(i, j) = k;
-		
+
 	end % of for j
 end % of for i
 ```
 
-This example uses indices `i` and `j` for loops, which have been standard in programming for [quite a long time](http://softwareengineering.stackexchange.com/questions/86904/why-do-most-of-us-use-i-as-a-loop-counter-variable). Because of these examples we often use `i` and `j` for loops in our experiment and analysis scripts. We can improve on this by making our loop indices more informative or specific. For example: 
+This example uses indices `i` and `j` for loops, which have been standard in programming for [quite a long time](http://softwareengineering.stackexchange.com/questions/86904/why-do-most-of-us-use-i-as-a-loop-counter-variable). Because of these examples we often use `i` and `j` for loops in our experiment and analysis scripts. We can improve on this by making our loop indices more informative or specific. For example:
 
 ```
 for i = 1:nBlocks
 	for j = 1:nTrials
 
 		trialType = conditionsByTrial(i, j)
-		
+
 		if i == 1 % if block 1
 			stimulusContrast = 10;
 		elseif i == 2 % if block 2
@@ -132,7 +145,7 @@ for block = 1:nBlocks
 	for trial = 1:nTrials
 
 		trialType = conditionsByTrial(block, trial)
-		
+
 		if block == 1
 			stimulusContrast = 10;
 		elseif block == 2
@@ -161,13 +174,13 @@ Screen(scrID, 'TextSize', instructionsTextSize);
 Screen(scrID, 'TextFont',  instructionsTypeface);
 DrawFormattedText(scrID, instructionsText, 'center', instructionsTextColour);
 ```### Tag end statements with their respective if/for/while commandsOne very useful trick is to attach a comment after `end` statements denoting what is being ended. For example:```if someVariable == 1
-	while anotherVariable < 200		anotherVariable = anotherVariable + 1;	end % of while anotherVariableend % of if someVariable```This is particularly useful when you have a lot of nested loops (i.e. loops within loops) or `if` statements. It is also useful for detecting when you add/remove an `end` statement and the existing `end` statements don’t line up with their intended `for/while/if` statements. 
+	while anotherVariable < 200		anotherVariable = anotherVariable + 1;	end % of while anotherVariableend % of if someVariable```This is particularly useful when you have a lot of nested loops (i.e. loops within loops) or `if` statements. It is also useful for detecting when you add/remove an `end` statement and the existing `end` statements don’t line up with their intended `for/while/if` statements.
 
 ### Use whitespace
-Adding spaces between parts of a line of code, or between lines of code, can make your scripts a lot easier to read. 
+Adding spaces between parts of a line of code, or between lines of code, can make your scripts a lot easier to read.
 
 For example, it is useful to put spaces between variables and mathematical operators, for example:```
-answer=(A+B)/1000 				answer = (A + B) / 1000
+answer=(A+B)/1000 			answer = (A + B) / 1000
 ```Whitespace is also useful when writing if/while/for statements:```if variableA>variableB&&variableC>variableDif variableA > variableB && variableC > variableD```
 
 Using commas followed by spaces is also very useful for delineating elements of a vector or input arguments for a function:
@@ -175,7 +188,7 @@ Using commas followed by spaces is also very useful for delineating elements of 
 ```exampleVector = [1 333 4 55 3+1 42/55 111];
 
 exampleVector = [1, 333, 4, 55, 3+1, 42/55, 111];store_rt_data(meanRT,medianRT+1,modeRT,stdevRT/sqrt(nSubjects))store_rt_data(meanRT, medianRT + 1, modeRT, stdevRT / sqrt(nSubjects))```
-You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:`A = sqrt(B+10) / mean(C-2) + D^2` ### Separate commands into different lines
+You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:`A = sqrt(B+10) / mean(C-2) + D^2`### Separate commands into different lines
 
 Some people like to collapse several simple operations into the same line of code. A common example in MATLAB scripts is:
 
@@ -229,10 +242,10 @@ If you feel particularly passionate about code formatting then you might want to
 `VariableName`
 `variableName``variable_name``Variable_Name``Structure.VariableName``structure.variable_name``VARIABLENAME``VARIABLE_NAME`
 
-For large projects teams usually agree on variable naming conventions to be used throughout the project. This makes the code a lot clearer and variables easier to identify. Using a consistent variable naming style also means that you don’t need to check how a variable was written each time you use it. 
+For large projects teams usually agree on variable naming conventions to be used throughout the project. This makes the code a lot clearer and variables easier to identify. Using a consistent variable naming style also means that you don’t need to check how a variable was written each time you use it.
 
-Each person has their preferred variable naming style (and might use different styles in separate projects). However setting a 'lab standard' style is useful to help us to easily read other lab members' code. This will be especially useful in code reviews (so that others don't need to adjust to a new style when they read your code).The convention we will use for variables is called **lower camel**. This style uses a lower case letter to begin the first word of a variable name. Subsequent words begin with a capital letter, which looks like humps on a camel’s back. Further information can be found [here](https://en.wikipedia.org/wiki/Camel_case).For example: 
-`lowerCamelCase``exampleVariableName``reactionTime`In MATLAB we will use a different naming convention for structures. The first letter of each word will be capitalised (known as **upper camel**). By doing this we can easily identify structures and variables based on how they are named. 
+Each person has their preferred variable naming style (and might use different styles in separate projects). However setting a 'lab standard' style is useful to help us to easily read other lab members' code. This will be especially useful in code reviews (so that others don't need to adjust to a new style when they read your code).The convention we will use for variables is called **lower camel**. This style uses a lower case letter to begin the first word of a variable name. Subsequent words begin with a capital letter, which looks like humps on a camel’s back. Further information can be found [here](https://en.wikipedia.org/wiki/Camel_case).For example:
+`lowerCamelCase``exampleVariableName``reactionTime`In MATLAB we will use a different naming convention for structures. The first letter of each word will be capitalised (known as **upper camel**). By doing this we can easily identify structures and variables based on how they are named.
 
 For Example:`Structure.lowerCamel`
 `StoredData.reactionTimes`To differentiate variables and structures from function names we will use **lowercase letters and underscores** for function names.
