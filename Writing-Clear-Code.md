@@ -1,36 +1,27 @@
 # Writing Clear Code
 
-![Bad Code](images/badcodememe.png)
+This section offers some advice for writing and formatting your code, and covers some standard coding practices that we could implement in the lab. 
 
-Some links to start out:
+Everyone has their own programming style and preferences, and one may/may not choose to adopt the practices described below. The primary purpose of each piece of advice is to highlight important (but seldom discussed) aspects of code design, focusing on code readability and interpretability.
 
-[MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
+If you know of other good practices please add them below (and add 'contributed by YOUR_NAME' to be recognised for your work).
 
-[Minimizing bugs in Cognitive Neuroscience programming](http://journal.frontiersin.org/article/10.3389/fpsyg.2014.01435/full)
+## Purpose of writing clear code
 
-[Writing Clear Code - Princeton University](http://introcs.cs.princeton.edu/java/11style/)
-
-[Top MATLAB 10 Practices that make me cry](https://blogs.mathworks.com/videos/2010/03/08/top-10-matlab-code-practices-that-make-me-cry/)
-
-[IBM - Six Ways to Write more Comprehensible Code](https://www.ibm.com/developerworks/library/l-clear-code/)
-
-[Top 15+ Best Practices for Writing Super Readable Code](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)
-
-## Purpose and examples of clear/unclear code
-
-### Purposes:
+### Why clean code is useful
 
 - Clean code is easy to read
 
 - Makes it easier to pass your project on to the next person
 
-- Easier for yourself/others to spot an error, and debug it early.
+- Easier for yourself/others to spot an error, and debug it early
 
-- Allows for easier collaboration, less confusion among teammates.
+- Allows for easier collaboration, less confusion among teammates
 
 
 ### Example of unclear code:
 
+Here is an example badly formatted code. This code runs the same as its well-formatted counterpart (below), however it is difficult to read and understand. Before going on, think about which aspects of this example make it difficult to read, and how these could be fixed or improved.
 
 ```
 
@@ -57,10 +48,10 @@ end
 
 ### Example of clear code:
 
+Here is the same piece of code reformatted to be clearer and easier to read. How did these changes fix the problems you identified in the example above? Could this clear code example be modified to further improve the readability of the code?
 
 ```
 % Print output
-
 A = 2;
 B = 5;
 C = (A + B) / 2;
@@ -91,14 +82,6 @@ end % of if someVariable
 
 ## Advice on writing and formatting MATLAB code
 
-- Use long variable names with underscores (HELLO_DECISION_NEUROSCIENCE_LAB) to avoid lengthy documentation.
-It is also easier for others to understand your variables and functions.
-
-- Make good use of comments, but avoid super-obvious ones.
-
-- Adopt a guideline for variable usage and commenting style.
-
-- It's nice to line up equal signs, spaces, and commas; this helps a lot with spotting errors.
 
 - Have consistent indentation and styling. Styling is a personal preference, but keeping the styling consistent
 makes it easier to read.
@@ -107,9 +90,8 @@ makes it easier to read.
 
 - If possible, try to keep lines short by using ellipsis (...)
 
-- Large indents can help late at night when those 2-space indents are hard to see.
 
-Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
+
 
 
 
@@ -194,8 +176,8 @@ minReactionTime = 1.2; % in seconds
 minReactionTimeSeconds = 1.2;
 minReactionTime_ms = 1200;
 
-accuracy % number of correct trials
-percentAccuracy
+accuracy = nCorrectTrials; % number of correct trials
+percentAccuracy = nCorrectTrials / nTotalTrials;
 
 distanceToScreen = 60; % in cm
 distanceToScreen_cm = 60;
@@ -332,7 +314,26 @@ stimulusDuration_ms = 500; % TODO adjust to be an exact multiple of the monitor 
 
 If you feel particularly passionate about code formatting then you might want to read [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view). This book contains a hundreds of tips for writing clearer MATLAB code. Some example tips are listed [here](http://blogs.mathworks.com/loren/2011/02/10/book-review-the-elements-of-matlab-style/).
 
+In addition, here are some links to articles that offer good programming advice:
+
+[MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
+
+[Axelrod, 2014. Minimizing Bugs in Cognitive Neuroscience Programming](http://journal.frontiersin.org/article/10.3389/fpsyg.2014.01435/full)
+
+[Writing Clear Code - Princeton University](http://introcs.cs.princeton.edu/java/11style/)
+
+[Top MATLAB 10 Practices that make me cry](https://blogs.mathworks.com/videos/2010/03/08/top-10-matlab-code-practices-that-make-me-cry/)
+
+[IBM - Six Ways to Write more Comprehensible Code](https://www.ibm.com/developerworks/library/l-clear-code/)
+
+[Top 15+ Best Practices for Writing Super Readable Code](https://code.tutsplus.com/tutorials/top-15-best-practices-for-writing-super-readable-code--net-8118)
+
+
 ## Lab coding standards and practices
+
+This section describes some conventions that would be useful to adopt across the lab. Adopting some common coding practices will make our code easier for others to read. This is especially useful when sharing/reusing code, or when helping each other with debugging (such as during code reviews). 
+
+Existing projects may use different conventions to those listed below. In this case it is probably best to keep the old conventions within that project (reformatting a large number of variables can lead to many mistakes/bugs in the code).
 ### Variable naming
 Different projects use different naming conventions for variables, structures and functions in MATLAB. For example:
 `VariableName`
@@ -351,7 +352,7 @@ For example:`display_stimulus(inputArg1, inputArg2)`
 
 Feel free to use other variable/structure/function naming conventions in your own projects if you wish. In any case (pun intended) it is useful to note your naming conventions in the script headers or in the wiki for a project or repository. When making changes to someone else's code, always remember to use the naming conventions that they have defined in their project.
 
-Different naming conventions may work best with different programming languages. If you have a good style for R or Python please let us know or add this to the workshop wiki!
+Different naming conventions may work best with different programming languages. If you have a good style for R or Python please let us know, or add this to the workshop wiki!
 
 ## Navigation
 
