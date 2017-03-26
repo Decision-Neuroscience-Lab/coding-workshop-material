@@ -47,7 +47,7 @@ percentAccuracy
 % distances
 dist2S=60; dist2S_c=60;
 
-if variableA>variableB&&variableC>variableD
+if variableA>variableB
 		while variableA>200
 				variableA=variableA+1
 		end
@@ -59,6 +59,37 @@ end
 ### Example of clear code:
 
 *TODO Cheng can you please use the same section of code, but fix all of the problems with the ugly code to make code which is beautiful and easy to understand*
+
+```
+% Print output
+
+A = 2;
+B = 5;
+C = (A + B) / 2;
+fprintf(C);
+
+% Set of variables used for (xxx purpose)
+
+minReactionTime = 1.2; % in seconds
+minReactionTimeSeconds = 1.2;
+minReactionTime_ms = 1200;
+
+accuracy % number of correct trials
+percentAccuracy
+
+distanceToScreen = 60; % in cm
+distanceToScreen_cm = 60;
+
+% Incrementing variables less than 200
+
+if someVariable == 1
+	while anotherVariable < 200
+
+		anotherVariable = anotherVariable + 1;
+
+	end % of while anotherVariable
+end % of if someVariable
+```
 
 ## Advice on writing and formatting MATLAB code
 
@@ -105,11 +136,50 @@ clear percentAccuracy;
 % do the calculation
 visAngleImage = imageSize_cm / distanceFromScreen_cm *
 
+```
+Brief syntatical notes on how to comment:
 
+- Use % for every single line of comment. Everything from % to the end of the line is ignored by the program, and is meant for the human reader when going through the code.
+- Use %{ (comment) %} for multi line comments, or repeat % down the left side of the paragraph.
+
+
+Block comments:
+
+```
+%
+% Decision Neuroscience Lab's code
+%
+% This is a block comment!
+%
+% This code helps to find the best pizza places in Melbourne.  
+%
+
+some code
+```
+
+Multi line comments:
+
+```
+%{ one multiline  %}
+
+some code
 
 ```
 
-*TODO include examples of informative comments*
+Block multi line comments:
+```
+%{
+
+	 Decision Neuroscience Lab's code
+
+	 This is a block comment!
+
+	 This code does nothing.  
+
+%}
+
+some code
+```
 
 
 
@@ -118,6 +188,8 @@ visAngleImage = imageSize_cm / distanceFromScreen_cm *
 A frustrating part of reading or editing stimulus presentation or analysis scripts is that variables are often defined without stating their unit of measurement. Sometimes you cannot know which unit of measurement is used without running the script or looking at the data. For example, were reaction times recorded in seconds or milliseconds? Did the accuracy variable refer to the number or percentage of correctly-responded trials? Sometimes the unit of measurement will be obvious, but in many cases it will not.
 
 This problem can be avoided by appending the unit of measurement to the variable name, or by adding a comment. For example:
+
+
 
 ```
 minReactionTime = 1.2; % in seconds
