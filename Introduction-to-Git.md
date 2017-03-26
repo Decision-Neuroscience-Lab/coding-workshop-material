@@ -3,13 +3,17 @@ This section of the workshop provides a quick tutorial to Git, open source colla
 
 ![git](images/smallgit.png)
 
+<br/>
+
 ## Introduction to Git
 
 ### What is Git?
-Founded in 2005 by Linus Torvalds, Git is currently the most widely used version control system. Many organisations and official projects use Git as a system for collaboration and version control. Git also allows for people to work on casual open source projects, where anyone on the internet can contribute to a person's existing code, or duplicate a copy to play around on their own. As a collaborative tool, Git allows each developer or collaborator to have a working copy of a repository, from which they can pull (download) or push (upload) new changes to the master copy.
+Founded in 2005 by Linus Torvalds, Git is currently the most widely used version control system. Many organisations and official projects use Git as a system for collaboration and version control. Git also allows for people to work on casual open source projects, where anyone on the internet can contribute to a person's existing code, or duplicate a copy to play around on their own. 
+
+Git works using repositories, which are like archives or folders for your code. Each repository contains code files (such as MATLAB, R, C or python scripts) but also keeps track of all changes that people have made to the code over time. As a collaborative tool, Git allows each developer or collaborator to have a working copy of a repository, from which they can pull (download) or push (upload) new changes to the master copy.
 
 
-Some resources:
+### Some resources:
 
 [Getting started/hello world activity](https://guides.github.com/activities/hello-world/)
 
@@ -34,18 +38,20 @@ Also, Github offers [free private repositories](https://education.github.com/pac
 
 ### Github
 
-Create a Github account. This will allow you to be added to the Decision Neuroscience Lab group and contribute to code for experiments and analyses. You can do this at [github.com](https://github.com).
+Github is the most popular website for storing Git repositories, and is used by many researchers. You can sign up for Github at [github.com](https://github.com). Academic accounts get up to 5 free private repositories, which are useful to hide your work from others.
+
+Github only offers up to 20 private repositories for larger groups/organisations such as our lab, so instead we will use Bitbucket to host our files.
 
 ![githubsignup](images/Githubsignup.png)
 
 ### BitBucket
 
-The lab will be hosting projects on BitBucket in the future. When you create a BitBucket account, use a **.edu** email to get unlimited private repositories. You can do this at [bitbucket.org](https://bitbucket.org)
+The lab will be hosting projects on BitBucket in the future. When you create a BitBucket account, use a **.edu** email to get unlimited private repositories. You can do this at [bitbucket.org](https://bitbucket.org). Bitbucket offers unlimited private repositories to anyone with a .edu email address.
 
 
 ## Joining the Decision Neuroscience Lab organisation
 
-Get added to a team in the Decision Neuroscience Lab organisation. This is an account which hosts code for completed and in-progress projects. Ask Daniel F or Will and they will add you to the organisation.
+Get added to the Lab Members team in the [Decision Neuroscience Lab organisation](https://bitbucket.org/Decision-Neuroscience-Lab/). This is the lab account which hosts code for completed and in-progress projects. After you have signed up to Bitbucket please email Daniel F (or another admin that you know of) with your username and they will add you to the team. 
 
 The organisation Github page can be found [here](https://github.com/Decision-Neuroscience-Lab).
 
@@ -53,7 +59,7 @@ The organisation Bitbucket page can be found [here](https://bitbucket.org/Decisi
 
 ## Download and install an application that interfaces with Git
 
-Download and install an application that interfaces with Git. Which program you use depends on your personal preferences. Some popular programs are [SourceTree](www.sourcetreeapp.com/), [Github Desktop](https://desktop.github.com/) and [TortoiseGit](https://tortoisegit.org/) (but please send me recommendations of other good alternatives). For this project I would recommend SourceTree as it is relatively easy to learn.
+Download and install an application that interfaces with Git. Which program you use depends on your personal preferences. Some popular programs are [SourceTree](www.sourcetreeapp.com/), [Github Desktop](https://desktop.github.com/) and [TortoiseGit](https://tortoisegit.org/) (but please add recommendations of other good alternatives). Sourcetree is a great application for beginners as it uses a GUI and has nice graphical displays of the history of code modifications in a project.
 
 A tutorial for SourceTree can be found [here](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow).
 
@@ -81,13 +87,13 @@ Most of SourceTree's main working functions can be found in the toolbar, at the 
 
 (Examples of commits and changes you can view on the SourceTree app)
 
-**Pull:** Pull refers to when you are bringing in previous changes, and merging them to your copy. For example, after someone edits a file from the last time you've seen the repository, you would want to update these changes before making any further changes yourself.
+**Pull:** Pull refers to when you are bringing in previous changes, and merging them to your copy. For example, after someone edits a file from the last time you've seen the repository, you can integrate or 'pull' their changes into your copy.
 
 **Push:** Pushing refers to uploading your committed changes onto your repository, on a server such as Github or Bit Bucket. Once you push the changes you make, others can see them.
 
 ![Push](images/gitpush.png)
 
-**Pull request:** Pull requests are proposed changes, or change requests, that can be either accepted or rejected by the repository's collaborator.
+**Pull request:** Pull requests are proposed changes, or change requests, that can be either accepted or rejected by collaborators working on repository. For example, someone might add a new feature and submit a pull request, prompting others to discuss and review these changes before merging them into the main code.
 
 
 [About Pull Requests (Github)](https://help.github.com/articles/about-pull-requests/)
