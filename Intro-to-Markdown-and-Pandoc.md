@@ -1,4 +1,4 @@
-# Introduction to Markdown and Pandoc
+# 4. Introduction to Markdown and Pandoc
 
 This section of the workshop introduces Markdown (a simple  language designed for easy formatting of documents) and Pandoc (a program that converts between document types). You can use Markdown and Pandoc to collaboratively write documents and track text modifications. Markdown is also excellent for noting down ideas or writing guides for experiments and analyses.
 

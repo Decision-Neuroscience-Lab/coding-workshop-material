@@ -1,4 +1,4 @@
-# Introduction to Git
+# 2. Introduction to Git
 This section of the workshop provides a quick tutorial to Git, open source collaboration and version control.
 
 ![git](images/smallgit.png)

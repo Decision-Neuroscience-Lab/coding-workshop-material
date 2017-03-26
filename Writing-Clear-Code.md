@@ -1,4 +1,4 @@
-# Writing Clear Code
+# 1. Writing Clear Code
 
 This section offers some advice for writing and formatting your code, and covers some standard coding practices that we could implement in the lab. 
 

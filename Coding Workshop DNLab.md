@@ -1,30 +1,31 @@
 # Decision Neuroscience Lab Coding Practices Workshop
 
-This workshop is focused on establishing good practices in the lab relating to how we write, share and evaluate code. Some useful pieces of software are also introduced to make it easier to find bugs and manage your code. Collaborative programming and writing practices are also described, which may be useful when working with overseas collaborators or on team-based projects.
+This workshop is focused on establishing good practices in the lab relating to how we write, share and evaluate code. Some useful pieces of software are also introduced, which make it easier to manage your code. Collaborative programming and writing practices are also described, which may be useful when working with overseas collaborators or on team-based projects.
+
 
 <br/>
 
 ## Navigation
 
-[**Writing Clear Code**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Writing-Clear-Code.md)
+[**1. Writing Clear Code**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Writing-Clear-Code.md)
 
-[**Introduction to Git**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Introduction-to-Git.md)
+[**2. Introduction to Git**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Introduction-to-Git.md)
 
-[**Code Review**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)
+[**3. Code Review**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)
 
-[**Introduction to Markdown and Pandoc**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Intro-to-Markdown-and-Pandoc.md)
+[**4. Introduction to Markdown and Pandoc**](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Intro-to-Markdown-and-Pandoc.md)
 
 
 ## Outline
 
-### Writing Clear Code
+### 1. Writing Clear Code
 
 * Purpose and examples of clear/unclear code
 * Advice on writing and formatting MATLAB code
 * Lab coding standards and practices
 
 
-### Introduction to Git
+### 2. Introduction to Git
 
 * Introduction to Git
 * Setting up a Git account
@@ -35,13 +36,13 @@ This workshop is focused on establishing good practices in the lab relating to h
 * Making a wiki for your repository
 
 
-### Code Review
+### 3. Code Review
 
 * What is code review?
 * Why do we need code reviews in science?
 * Protocol and guidelines
 
-### Introduction to Markdown and Pandoc
+### 4. Introduction to Markdown and Pandoc
 
 * Introduction to Markdown
 * Collaborative writing
