@@ -185,11 +185,9 @@ Source: [Utah CS](http://www.cs.utah.edu/~germain/PPS/Topics/commenting.html)
 
 ### Include units of measurement in variable names of comments
 
-A frustrating part of reading or editing stimulus presentation or analysis scripts is that variables are often defined without stating their unit of measurement. Sometimes you cannot know which unit of measurement is used without running the script or looking at the data. For example, were reaction times recorded in seconds or milliseconds? Did the accuracy variable refer to the number or percentage of correctly-responded trials? Sometimes the unit of measurement will be obvious, but in many cases it will not.
+A frustrating part of reading stimulus presentation or analysis scripts is that variables are often defined without stating their unit of measurement. Sometimes you cannot know which unit of measurement is used without running the script or looking at the data. For example, were reaction times recorded in seconds or milliseconds? Did the accuracy variable refer to the number or percentage of correctly-responded trials? Sometimes the unit of measurement will be obvious, but in many cases it will not.
 
 This problem can be avoided by appending the unit of measurement to the variable name, or by adding a comment. For example:
-
-
 
 ```
 minReactionTime = 1.2; % in seconds
@@ -254,6 +252,8 @@ for block = 1:nBlocks
 end % of for block
 ```
 
+Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
+
 ### Define hard-coded variables at the beginning of the script
 Wherever possible ‘hard-coded’ variables (values that are defined in the code but are often adjusted or changed) should be defined at the top of the script. This makes it easy to keep track of variables without digging through the bulk of the code in order to find them.
 
@@ -271,8 +271,10 @@ instructionsTextColour = [255, 255, 255];
 Screen(scrID, 'TextSize', instructionsTextSize);
 Screen(scrID, 'TextFont',  instructionsTypeface);
 DrawFormattedText(scrID, instructionsText, 'center', instructionsTextColour);
-```### Tag end statements with their respective if/for/while commandsOne very useful trick is to attach a comment after `end` statements denoting what is being ended. For example:```if someVariable == 1
+```Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)### Tag end statements with their respective if/for/while commandsOne very useful trick is to attach a comment after `end` statements denoting what is being ended. For example:```if someVariable == 1
 	while anotherVariable < 200		anotherVariable = anotherVariable + 1;	end % of while anotherVariableend % of if someVariable```This is particularly useful when you have a lot of nested loops (i.e. loops within loops) or `if` statements. It is also useful for detecting when you add/remove an `end` statement and the existing `end` statements don’t line up with their intended `for/while/if` statements.
+
+Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
 
 ### Use whitespace
 Adding spaces between parts of a line of code, or between lines of code, can make your scripts a lot easier to read.
@@ -286,7 +288,9 @@ Using commas followed by spaces is also very useful for delineating elements of 
 ```exampleVector = [1 333 4 55 3+1 42/55 111];
 
 exampleVector = [1, 333, 4, 55, 3+1, 42/55, 111];store_rt_data(meanRT,medianRT+1,modeRT,stdevRT/sqrt(nSubjects))store_rt_data(meanRT, medianRT + 1, modeRT, stdevRT / sqrt(nSubjects))```
-You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:`A = sqrt(B+10) / mean(C-2) + D^2`### Separate commands into different lines
+You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:`A = sqrt(B+10) / mean(C-2) + D^2`
+
+Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)### Separate commands into different lines
 
 Some people like to collapse several simple operations into the same line of code. A common example in MATLAB scripts is:
 
@@ -327,7 +331,6 @@ Sometimes you will need to defer writing some parts of a script/function until l
 
 ```
 stimulusDuration_ms = 500; % TODO adjust to be an exact multiple of the monitor refresh duration
-
 ```
 
 ### Further reading
