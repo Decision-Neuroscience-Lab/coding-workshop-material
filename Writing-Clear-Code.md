@@ -31,7 +31,6 @@ Some links to start out:
 
 ### Example of unclear code:
 
-*TODO Cheng can you please make a section of code and then modify it to break all of rules outlined below, to make the ugliest piece of code imaginable!*
 
 ```
 
@@ -58,7 +57,6 @@ end
 
 ### Example of clear code:
 
-*TODO Cheng can you please use the same section of code, but fix all of the problems with the ugly code to make code which is beautiful and easy to understand*
 
 ```
 % Print output
@@ -140,7 +138,7 @@ visAngleImage = imageSize_cm / distanceFromScreen_cm *
 Brief syntatical notes on how to comment:
 
 - Use % for every single line of comment. Everything from % to the end of the line is ignored by the program, and is meant for the human reader when going through the code.
-- Use %{ (comment) %} for multi line comments, or repeat % down the left side of the paragraph.
+- Use %{ *comment* %} for multi line comments, or repeat % down the left side of the paragraph.
 
 
 Block comments:
@@ -149,7 +147,7 @@ Block comments:
 %
 % Decision Neuroscience Lab's code
 %
-% This is a block comment!
+% I am a block comment!
 %
 % This code helps to find the best pizza places in Melbourne.  
 %
@@ -160,7 +158,7 @@ some code
 Multi line comments:
 
 ```
-%{ one multiline  %}
+%{ i am a multi line! %}
 
 some code
 
@@ -172,7 +170,7 @@ Block multi line comments:
 
 	 Decision Neuroscience Lab's code
 
-	 This is a block comment!
+	 I am a block comment!
 
 	 This code does nothing.  
 
