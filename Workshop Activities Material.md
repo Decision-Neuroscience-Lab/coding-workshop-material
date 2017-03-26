@@ -32,6 +32,10 @@
 
 `percentile_bootstrap(dataCond1, dataCond2, nBootstrapIterations)`
 
+### Other Conventions
 
+Function file names should be the same as the functions themselves.
+
+Use lowercase and underscores for .mat files, or a different convention? 
 
 
