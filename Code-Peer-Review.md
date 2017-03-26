@@ -8,9 +8,9 @@ Code review is a peer-review process for code, with many of the same benefits as
 2. Sections that are unclear or difficult to understand
 3. Possible improvements or options for extending the code
 
-A popular code review protocol usually proceeds as follows: the primary author of the code and the reviewer(s) usually sit down together and first discuss the structure and purpose of the code. The reviewers then look through the code independently from the author. Reviewers usually make notes and/or leave comments in the code, which are then discussed online or in-person. The primary author of the code can then choose to make or reject changes suggested by the reviewer(s). 
+A popular code review protocol usually proceeds as follows: the primary author of the code and the reviewer(s) usually sit down together and first discuss the structure and purpose of the code. The reviewers then look through the code independently from the author. Reviewers make notes and/or leave comments in the code, which are then discussed online or in-person. The primary author of the code can then choose to make or reject changes suggested by the reviewer(s). 
 
-There are multiple benefits of this process. The author gets valuable feedback; others may spot bugs that may be missed by the code's primary author(s). Reviewers get a glimpse of how other people write and structure their programs, and often learn new approaches or methods that are relevant to their own work. Sharing knowledge among collaborators also trains more people to solve (and help with) a wide variety of problems, and raises the [bus factor](https://en.wikipedia.org/wiki/Bus_factor). 
+There are multiple benefits of this process. The author gets valuable feedback; others may spot bugs that may be missed by the code's primary author(s). Reviewers get a glimpse of how other people write and structure their programs, and often learn new approaches or methods that are relevant to their own work. Sharing knowledge among collaborators also helps people to solve a wide variety of problems, and raises the [bus factor](https://en.wikipedia.org/wiki/Bus_factor). 
 
 ### Why do we need code reviews in science?
 
@@ -32,7 +32,7 @@ We can proceed as follows:
 
 2. An author **approaches a potential reviewer** and asks them to review. When choosing someone to review your code it is good to ask a person that is doing a similar project or analysis technique. This allows the reviewer to see how others design experiments or analyses in their field of research. However, reviewers with different areas of expertise can also be good, as it can broaden reviewers' knowledge of experimental paradigms and data analysis techniques. 
 
-3. The reviewer is given access to the Git repository containing the code to be reviewed and **makes a new branch**. This branch should be called something like 'danf-code-review'. Make sure to branch off of the most recent version of the code. 
+3. The reviewer is given access to the Git repository containing the code to be reviewed and **makes a new branch**. This branch should be called something like 'danf-code-review' if Dan F is the reviewer. Make sure to branch off of the most recent version of the code. 
 
 4. The reviewer **makes notes, and makes changes/inserts comments in the code**. For example, comments could be included that ask for further explanation/clarification or suggest an improvement. Reviewer comments should be prefaced by a keyword, so that the code author(s) can easily locate them using the search function. For example, you could preface each comment with DANF_COMMENT. Try to write informative comments and explain the reasons why you have made each suggestion.
 
@@ -61,6 +61,6 @@ This is the basic structure of the proposed code review. Below are some links th
 
 <<< [Introduction to Git](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Writing-Clear-Code.md)
 				
-[Introduction to Markdown and Pandoc](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Intro%20to%20Markdown%20and%20Pandoc.md) >>>	
+[Introduction to Markdown and Pandoc](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Intro-to-Markdown-and-Pandoc.md) >>>	
 
 [Back to workshop overview](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Coding%20Workshop%20DNLab.md)
