@@ -57,6 +57,11 @@ Download and install an application that interfaces with Git. Which program you 
 
 A tutorial for SourceTree can be found [here](https://github.com/GSoft-SharePoint/Dynamite/wiki/Getting-started-with-SourceTree,-Git-and-git-flow).
 
+Video tutorials for these softwares:
+[Getting started with Git on Sourcetree](https://www.youtube.com/watch?v=UD7PV8auGLg)
+[Git for Bitbucket and Sourcetree](https://www.youtube.com/watch?v=R3iU_CKGKUo)
+[Github Desktop tutorial](https://www.youtube.com/watch?v=BKr8lbx3uFY)
+
 
 ## Useful features of Git (e.g. push, pull, branch) demonstrated in Sourcetree
 
