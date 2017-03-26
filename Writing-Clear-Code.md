@@ -82,18 +82,35 @@ end % of if someVariable
 
 ## Advice on writing and formatting MATLAB code
 
+### Keep your style consistent within a script or project
 
-- Have consistent indentation and styling. Styling is a personal preference, but keeping the styling consistent
-makes it easier to read.
+Have consistent indentation and styling. Styling is a personal preference, but keeping the styling consistent
+makes it easier to read. People get used to reading code a certain way, and changing this mid-script causes a lot of confusion. 
 
-- Keep functions small! They can be reused for other functions. It also helps make it easier to read.
+Style changes also tend to occur when reusing parts of someone else's code. It can be useful to go through the copied code and convert it to your project's style. 
 
-- If possible, try to keep lines short by using ellipsis (...)
-
-
-
+Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
 
 
+### Use ellipses to break up a long line of code
+
+Sometimes you will need to write a very long line of code, which requires sideways scrolling to see the end of the line. It is very easy to misunderstand or 'lose track of' these long lines, as the the whole line of code cannot be viewed at once. 
+
+One solution is to use ellipses (...) to break up a long line, so that the entire thing is visible on the screen. For example, this long line:
+
+```
+someOverlyLongVariableName = (variableA + variableB) / sqrt(variableC + variableD) + someDefinedConstant;
+```
+
+Can be broken up like this:
+
+```
+someOverlyLongVariableName = (variableA + variableB) ...
+/ sqrt(variableC + variableD) ...
++ someDefinedConstant;
+```
+
+Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
 
 
 ### Avoid variable names that are similar to function namesMATLAB has a wide variety of available functions. Some of these functions may share the same name with variables that you want to use in your code. For example, ‘path’ is a variable name that might be used to denote a file save location in a script, but is also a MATLAB function. When a MATLAB function name is used as a variable, that function will stop working in that script (which can cause unforseen problems). Wherever possible use variable names that are unlikely to have the same name as MATLAB functions.Similarly, try to avoid generic programming terms like ‘dir’ for variable names. If in doubt, enter `which ` or `help ` followed by the variable name into the command line, to see if an existing function shares the same name as your variable.
