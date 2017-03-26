@@ -48,7 +48,7 @@ end
 
 ### Example of clear code:
 
-Here is the same piece of code reformatted to be clearer and easier to read. How did these changes fix the problems you identified in the example above? Could this clear code example be modified to further improve the readability of the code?
+Here is the same piece of code reformatted to be clearer and easier to read. How did these changes fix the problems you identified in the example above? Could this example be modified to further improve the readability of the code?
 
 ```
 % Print output
@@ -80,6 +80,8 @@ if someVariable == 1
 end % of if someVariable
 ```
 
+<br/>
+
 ## Advice on writing and formatting MATLAB code
 
 ### Keep your style consistent within a script or project
@@ -99,7 +101,7 @@ Sometimes you will need to write a very long line of code, which requires sidewa
 One solution is to use ellipses (...) to break up a long line, so that the entire thing is visible on the screen. For example, this long line:
 
 ```
-someOverlyLongVariableName = (variableA + variableB) / sqrt(variableC + variableD) + someDefinedConstant;
+someOverlyLongVariableName = (variableA + variableB) / sqrt(variableC + variableD) + someDefinedConstant + mean(reactionTimes, 3);
 ```
 
 Can be broken up like this:
@@ -107,7 +109,8 @@ Can be broken up like this:
 ```
 someOverlyLongVariableName = (variableA + variableB) ...
 / sqrt(variableC + variableD) ...
-+ someDefinedConstant;
++ someDefinedConstant ...
++ mean(reactionTimes, 3);
 ```
 
 Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
