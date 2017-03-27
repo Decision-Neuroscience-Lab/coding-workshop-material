@@ -373,6 +373,14 @@ For Example:`Structure.lowerCamel`
 For example:`display_stimulus(inputArg1, inputArg2)`
 `record_reaction_time(trial, reactionTimeThisTrial)`Functions from toolboxes or other projects (e.g. PsychToolbox) will have different conventions for function names (PsychToolbox uses upper camel, EEGlab and DDTBOX uses lower case with underscores). This mixture of function naming conventions is unavoidable, however it is usually easy to distinguish these after some experience with MATLAB code.
 
+**Exceptions/Special Cases**
+
+Sometimes a variable or structure name won't look right in camel case (particularly those with acronyms). In these situations we can use an underscore to separate words in a variable.
+
+For example `ERP_amplitudes` or `RT_data`
+
+<br/>
+
 Feel free to use other variable/structure/function naming conventions in your own projects if you wish. In any case (pun intended) it is useful to note your naming conventions in the script headers or in the wiki for a project or repository. When making changes to someone else's code, always remember to use the naming conventions that they have defined in their project.
 
 Different naming conventions may work best with different programming languages. If you have a good style for R or Python please let us know, or add this to the workshop wiki!
