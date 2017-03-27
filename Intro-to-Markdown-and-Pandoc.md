@@ -88,6 +88,10 @@ By using Markdown with Pandoc you can quickly and easily format your writing, ke
 ## Software
 [iA Writer](https://ia.net/writer/) is probably the most feature-laden markdown editor. It has Tex integration, built in exporting, tables, images, content blocks, and you can even make slideshows in it. But this comes at a price ($30).
 
+[MacDown](https://macdown.uranusjr.com) is a great free alternative, and still has most of the key characteristics that are valuable in a markdown editor.
+
+For PC users, [Markdown Pad](http://markdownpad.com) is the only editor I've used. It seems to lack any features but is sufficient for writing and editing.
+
 You can also use markdown in R, alongside your code and any output. This relies on a package called `knitr`, and we might have a workshop on this in the future.
 
 ## Navigation
