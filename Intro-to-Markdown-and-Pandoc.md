@@ -94,6 +94,8 @@ For PC users, [Markdown Pad](http://markdownpad.com) is the only editor I've use
 
 You can also use markdown in R, alongside your code and any output. This relies on a package called `knitr`, and we might have a workshop on this in the future.
 
+(If using macOS, I high recommend installing a quicklook [tool](https://github.com/toland/qlmarkdown) for .md documents, which will allow you to preview the content of the file in the finder using the spacebar.)
+
 ## Navigation
 
 <<< [Code Peer-Review](https://github.com/Decision-Neuroscience-Lab/coding-workshop-material/blob/master/Code-Peer-Review.md)						
