@@ -2,6 +2,7 @@
 
 This workshop is focused on establishing good practices in the lab relating to how we write, share and evaluate code. Some useful pieces of software are also introduced, which make it easier to manage your code. Collaborative programming and writing practices are also described, which may be useful when working with overseas collaborators or on team-based projects.
 
+Written by Cheng Chua and Daniel Feuerriegel, with contributions by Bowen Fung.
 
 <br/>
 
