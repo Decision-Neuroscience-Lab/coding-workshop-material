@@ -93,6 +93,29 @@ Style changes also tend to occur when reusing parts of someone else's code. It c
 
 Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
 
+Here's an example of inconsistent style in a block of code:
+
+```
+REACTIONTIME = timeOfResponse - timeofstimulus;
+
+if REACTIONTIME > 1000 % If reaction time is over 1000 ms
+
+	FEEDBACK=9;
+	trial_outcome = 'Too Slow';
+	correctResponse=0;
+
+		end
+
+totalRT = 0; % Sum of all RTs
+for iI = 1:100
+totalRT=totalRT + reactionTime_eachTrial(iI);
+end
+
+
+```
+
+What aspects are inconsistent? What could you do to help make it easier to read? What are some other things you would change?
+
 
 ### Use ellipses to break up a long line of code
 
