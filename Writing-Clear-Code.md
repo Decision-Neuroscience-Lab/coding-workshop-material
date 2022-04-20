@@ -291,7 +291,7 @@ Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elemen
 
 ### Define hard-coded variables at the beginning of the script
 
-Wherever possible ‘hard-coded’ variables (values that are defined in the code but are often adjusted or changed) should be defined at the top of the script. This makes it easy to keep track of variables without digging through the bulk of the code in order to find them.
+Wherever possible ‘hard-coded’ variables (values that are given a value or 'defined' in the code but are often adjusted or changed by the programmer) should be defined at the top of the script. This makes it easy to keep track of variables without digging through the bulk of the code in order to find them. For example, if you are programming an experiment, you can hard-code the number of trials and number of blocks at the top, as well as other variables. This will make the information easy to find when you write your methods section, or when you want to adjust the experiment during piloting.
 
 For example:
 
@@ -308,6 +308,8 @@ Screen(scrID, 'TextSize', instructionsTextSize);
 Screen(scrID, 'TextFont',  instructionsTypeface);
 DrawFormattedText(scrID, instructionsText, 'center', instructionsTextColour);
 ```
+
+In some experiments, you may even want to write a parameters script that defines all of these variables. You can call this script at the start of the experiment, and it keeps all of your hard-coded variables in one convenient, well-organised place!
 
 Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
 
