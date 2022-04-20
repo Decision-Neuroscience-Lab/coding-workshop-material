@@ -153,7 +153,9 @@ Another example would be replacing `maxf` with something like `maxForce` or `tst
 
 ### Write informative comments
 
-It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code).
+In many programming languages, you can add comments which contain text that can be read by humans (but is not read by the machine). Adding comments can help you to understand what a bit of code does, and can also help you track your thought processes as you design and experiment or work out an analysis. Including code comments is good practice and Dan F believes comments should be included in all scientific code that we generate.
+
+It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code). Sometimes you will write the code first, and then come back to comment on it. Completing this extra step (called documentation) is an essential part of coding, and should not be skipped!
 
 Using informative variable names and comments also contributes to an important secondary purpose of writing code: to show how an operation or calculation is performed. Clear code can be more easily modified and is easier adapt for use in other scripts, functions or projects.
 
