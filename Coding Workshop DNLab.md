@@ -4,6 +4,8 @@ This workshop is focused on establishing good practices in the lab relating to h
 
 Written by Cheng Chua and Daniel Feuerriegel, with contributions by Bowen Fung.
 
+Updates in 2022 by Patrick Cooper and Daniel Feuerriegel
+
 <br/>
 
 ## Navigation
