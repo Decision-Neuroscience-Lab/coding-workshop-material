@@ -1,6 +1,6 @@
 # 1. Writing Clear Code
 
-This section offers some advice for writing and formatting your code, and covers some standard coding practices that we could implement in the lab. 
+This section offers some advice for writing and formatting your code, and covers some standard coding practices that we can implement in the lab. 
 
 Everyone has their own programming style and preferences, and one may/may not choose to adopt the practices described below. The primary purpose of each piece of advice is to highlight important (but seldom discussed) aspects of code design, focusing on code readability and interpretability.
 
@@ -116,13 +116,23 @@ someOverlyLongVariableName = (variableA + variableB) ...
 Source: [MIT - Good MATLAB Programming Practices](http://www.mit.edu/~pwb/cssm/GMPP.pdf)
 
 
-### Avoid variable names that are similar to function namesMATLAB has a wide variety of available functions. Some of these functions may share the same name with variables that you want to use in your code. For example, ‘path’ is a variable name that might be used to denote a file save location in a script, but is also a MATLAB function. When a MATLAB function name is used as a variable, that function will stop working in that script (which can cause unforseen problems). Wherever possible use variable names that are unlikely to have the same name as MATLAB functions.Similarly, try to avoid generic programming terms like ‘dir’ for variable names. If in doubt, enter `which ` or `help ` followed by the variable name into the command line, to see if an existing function shares the same name as your variable.
+### Avoid variable names that are similar to function names
+
+MATLAB has a wide variety of available functions. Some of these functions may share the same name with variables that you want to use in your code. For example, ‘path’ is a variable name that might be used to denote a file save location in a script, but is also a MATLAB function. When a MATLAB function name is used as a variable, that function will stop working in that script (which can cause unforseen problems). Wherever possible use variable names that are unlikely to have the same name as MATLAB functions.
+
+Similarly, try to avoid generic programming terms like ‘dir’ for variable names. If in doubt, enter `which ` or `help ` followed by the variable name into the command line, to see if an existing function shares the same name as your variable.
 
 ### Create informative variable names
-More generally, it is good practice to make your variable names as informative as possible. For example, rather than ‘path’ you could use the variable ‘filePath’ or ‘dataFilePath’ or ‘saveFilePath’. This helps anyone reading the code (including your future self) understand what each variable refers to without needing to see how it was defined earlier in the code.
 
-Another example would be replacing `maxf` with something like `maxForce` or `tstart` with `startTime`. However it is good not to make variable names too long (for example `maxForceForThisTrialInBlock1`) as they become difficult to read. The best balance is a succinct variable name that is still easily understood in the context of the code. When in doubt, always err towards longer variable names if it makes them easier to understand.### Write informative comments
-It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code).Using informative variable names and comments also contributes to an important secondary purpose of writing code: to show how an operation or calculation is performed. Clear code can be more easily modified and is easier adapt for use in other scripts, functions or projects.
+More generally, it is good practice to make your variable names as informative as possible. For example, rather than ‘path’ you could use the variable ‘filePath’ or ‘dataFilePath’ or ‘saveFilePath’. This helps anyone reading the code (including your future self) understand what each variable refers to without needing to see how it was defined earlier in the code.
+
+Another example would be replacing `maxf` with something like `maxForce` or `tstart` with `startTime`. However it is good not to make variable names too long (for example `maxForceForThisTrialInBlock1`) as they become difficult to read. The best balance is a succinct variable name that is still easily understood in the context of the code. When in doubt, always err towards longer variable names if it makes them easier to understand.
+
+### Write informative comments
+
+It is also good to add comments that clearly explain what each section or chunk of the code is doing. Commenting takes time while writing the code, but greatly speeds up the debugging process (and you will always need to debug code).
+
+Using informative variable names and comments also contributes to an important secondary purpose of writing code: to show how an operation or calculation is performed. Clear code can be more easily modified and is easier adapt for use in other scripts, functions or projects.
 
 However, try to avoid commenting on very obvious things which can easily be inferred just by looking at the code. People differ with respect to the amount of detail they put into comments, and it may take some time to find the right balance between informing the reader and over-explaining your code. If others keep coming to you and asking what certain sections of your code mean, then this is an indication that your comments are not clear enough.
 
@@ -255,7 +265,8 @@ end % of for block
 Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
 
 ### Define hard-coded variables at the beginning of the script
-Wherever possible ‘hard-coded’ variables (values that are defined in the code but are often adjusted or changed) should be defined at the top of the script. This makes it easy to keep track of variables without digging through the bulk of the code in order to find them.
+
+Wherever possible ‘hard-coded’ variables (values that are defined in the code but are often adjusted or changed) should be defined at the top of the script. This makes it easy to keep track of variables without digging through the bulk of the code in order to find them.
 
 For example:
 
@@ -271,26 +282,66 @@ instructionsTextColour = [255, 255, 255];
 Screen(scrID, 'TextSize', instructionsTextSize);
 Screen(scrID, 'TextFont',  instructionsTypeface);
 DrawFormattedText(scrID, instructionsText, 'center', instructionsTextColour);
-```Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)### Tag end statements with their respective if/for/while commandsOne very useful trick is to attach a comment after `end` statements denoting what is being ended. For example:```if someVariable == 1
-	while anotherVariable < 200		anotherVariable = anotherVariable + 1;	end % of while anotherVariableend % of if someVariable```This is particularly useful when you have a lot of nested loops (i.e. loops within loops) or `if` statements. It is also useful for detecting when you add/remove an `end` statement and the existing `end` statements don’t line up with their intended `for/while/if` statements.
+```
+
+Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
+
+### Tag end statements with their respective if/for/while commands
+One very useful trick is to attach a comment after `end` statements denoting what is being ended. For example:
+
+```
+if someVariable == 1
+	while anotherVariable < 200
+
+		anotherVariable = anotherVariable + 1;
+
+	end % of while anotherVariable
+end % of if someVariable
+```
+
+This is particularly useful when you have a lot of nested loops (i.e. loops within loops) or `if` statements. It is also useful for detecting when you add/remove an `end` statement and the existing `end` statements don’t line up with their intended `for/while/if` statements.
 
 Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
 
 ### Use whitespace
-Adding spaces between parts of a line of code, or between lines of code, can make your scripts a lot easier to read.
 
-For example, it is useful to put spaces between variables and mathematical operators, for example:```
-answer=(A+B)/1000 			answer = (A + B) / 1000
-```Whitespace is also useful when writing if/while/for statements:```if variableA>variableB&&variableC>variableDif variableA > variableB && variableC > variableD```
+Adding spaces between parts of a line of code, or between lines of code, can make your scripts a lot easier to read.
+
+For example, it is useful to put spaces between variables and mathematical operators, for example:
+
+```
+answer=(A+B)/1000 			
+
+answer = (A + B) / 1000
+```
+
+Whitespace is also useful when writing if/while/for statements:
+
+```
+if variableA>variableB&&variableC>variableD
+
+if variableA > variableB && variableC > variableD
+```
 
 Using commas followed by spaces is also very useful for delineating elements of a vector or input arguments for a function:
 
-```exampleVector = [1 333 4 55 3+1 42/55 111];
+```
+exampleVector = [1 333 4 55 3+1 42/55 111];
 
-exampleVector = [1, 333, 4, 55, 3+1, 42/55, 111];store_rt_data(meanRT,medianRT+1,modeRT,stdevRT/sqrt(nSubjects))store_rt_data(meanRT, medianRT + 1, modeRT, stdevRT / sqrt(nSubjects))```
-You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:`A = sqrt(B+10) / mean(C-2) + D^2`
+exampleVector = [1, 333, 4, 55, 3+1, 42/55, 111];
 
-Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)### Separate commands into different lines
+store_rt_data(meanRT,medianRT+1,modeRT,stdevRT/sqrt(nSubjects))
+
+store_rt_data(meanRT, medianRT + 1, modeRT, stdevRT / sqrt(nSubjects))
+```
+
+You may adopt different styles of code organisation, but the main point is to think about how you can use whitespace (blank spaces, blank lines etc.) to make your code easier to understand. You can even use spaces selectively to group elements within a line of code. For example, you can group certain mathematical operations together to make an equation clearer:
+
+`A = sqrt(B+10) / mean(C-2) + D^2`
+
+Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
+
+### Separate commands into different lines
 
 Some people like to collapse several simple operations into the same line of code. A common example in MATLAB scripts is:
 
@@ -331,7 +382,8 @@ Sometimes you will need to defer writing some parts of a script/function until l
 
 ```
 stimulusDuration_ms = 500; % TODO adjust to be an exact multiple of the monitor refresh duration
-```
+```
+
 
 ### Further reading
 
@@ -357,21 +409,58 @@ In addition, here are some links to articles that offer good programming advice:
 This section describes some conventions that would be useful to adopt across the lab. Adopting some common coding practices will make our code easier for others to read. This is especially useful when sharing/reusing code, or when helping each other with debugging (such as during code reviews). 
 
 Existing projects may use different conventions to those listed below. In this case it is probably best to keep the old conventions within that project (reformatting a large number of variables can lead to many mistakes/bugs in the code).
-### Variable naming
-Different projects use different naming conventions for variables, structures and functions in MATLAB. For example:
-`VariableName`
-`variableName``variable_name``Variable_Name``Structure.VariableName``structure.variable_name``VARIABLENAME``VARIABLE_NAME`
+
+### Variable naming
+
+Different projects use different naming conventions for variables, structures and functions in MATLAB. For example:
+
+`VariableName`
+
+`variableName`
+
+`variable_name`
+
+`Variable_Name`
+
+`Structure.VariableName`
+
+`structure.variable_name`
+
+`VARIABLENAME`
+
+`VARIABLE_NAME`
 
 For large projects teams usually agree on variable naming conventions to be used throughout the project. This makes the code a lot clearer and variables easier to identify. Using a consistent variable naming style also means that you don’t need to check how a variable was written each time you use it.
 
-Each person has their preferred variable naming style (and might use different styles in separate projects). However setting a 'lab standard' style is useful to help us to easily read other lab members' code. This will be especially useful in code reviews (so that others don't need to adjust to a new style when they read your code).The convention we will use for variables is called **lower camel**. This style uses a lower case letter to begin the first word of a variable name. Subsequent words begin with a capital letter, which looks like humps on a camel’s back. Further information can be found [here](https://en.wikipedia.org/wiki/Camel_case).For example:
-`lowerCamelCase``exampleVariableName``reactionTime`In MATLAB we will use a different naming convention for structures. The first letter of each word will be capitalised (known as **upper camel**). By doing this we can easily identify structures and variables based on how they are named.
+Each person has their preferred variable naming style (and might use different styles in separate projects). However setting a 'lab standard' style is useful to help us to easily read other lab members' code. This will be especially useful in code reviews (so that others don't need to adjust to a new style when they read your code).
 
-For Example:`Structure.lowerCamel`
-`StoredData.reactionTimes`To differentiate variables and structures from function names we will use **lowercase letters and underscores** for function names.
+The convention we will use for variables is called **lower camel**. This style uses a lower case letter to begin the first word of a variable name. Subsequent words begin with a capital letter, which looks like humps on a camel’s back. Further information can be found [here](https://en.wikipedia.org/wiki/Camel_case).
 
-For example:`display_stimulus(inputArg1, inputArg2)`
-`record_reaction_time(trial, reactionTimeThisTrial)`Functions from toolboxes or other projects (e.g. PsychToolbox) will have different conventions for function names (PsychToolbox uses upper camel, EEGlab and DDTBOX uses lower case with underscores). This mixture of function naming conventions is unavoidable, however it is usually easy to distinguish these after some experience with MATLAB code.
+For example:
+
+`lowerCamelCase`
+
+`exampleVariableName`
+
+`reactionTime`
+
+In MATLAB we will use a different naming convention for structures. The first letter of each word will be capitalised (known as **upper camel**). By doing this we can easily identify structures and variables based on how they are named.
+
+For Example:
+
+`Structure.lowerCamel`
+
+`StoredData.reactionTimes`
+
+To differentiate variables and structures from function names we will use **lowercase letters and underscores** for function names.
+
+For example:
+
+`display_stimulus(inputArg1, inputArg2)`
+
+`record_reaction_time(trial, reactionTimeThisTrial)`
+
+Functions from toolboxes or other projects (e.g. PsychToolbox) will have different conventions for function names (PsychToolbox uses upper camel, EEGlab and DDTBOX uses lower case with underscores). This mixture of function naming conventions is unavoidable, however it is usually easy to distinguish these after some experience with MATLAB code.
 
 **Exceptions/Special Cases**
 
