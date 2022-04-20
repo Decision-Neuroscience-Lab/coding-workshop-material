@@ -82,7 +82,7 @@ end % of if someVariable
 
 <br/>
 
-## Advice on writing and formatting MATLAB code
+## Advice on writing and formatting MATLAB code (Also applies to R and Python)
 
 ### Keep your style consistent within a script or project
 
