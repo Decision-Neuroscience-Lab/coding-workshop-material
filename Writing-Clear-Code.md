@@ -314,16 +314,53 @@ In some experiments, you may even want to write a parameters script that defines
 Source: [The Elements of Matlab Style](https://www.bookdepository.com/The-Elements-of-MATLAB-Style-Richard-K-Johnson/9780521732581?ref=grid-view)
 
 ### Tag end statements with their respective if/for/while commands
-One very useful trick is to attach a comment after `end` statements denoting what is being ended. For example:
+One very useful trick is to attach a comment after `end` statements denoting what is being ended. For example, in the following block of code it's hard to see which end statement is linked to which if/for/while statement or loop:
 
 ```
 if someVariable == 1
 	while anotherVariable < 200
 
 		anotherVariable = anotherVariable + 1;
+		
+		if anotherVariable > 100
+			
+			reward = reward + 100;
+			
+			if reward > 1000
+				
+				cashAmount = cashAmount + 10;
+				
+			end
+		end
+	end
+end
 
-	end % of while anotherVariable
+```
+
+Adding comments after the end statements makes it a bit easier to read. You can also add some whitespace (lines of blank code) between end statements:
+
+```
+if someVariable == 1
+	while anotherVariable < 200
+
+		anotherVariable = anotherVariable + 1;
+		
+		if anotherVariable > 100
+			
+			reward = reward + 100;
+			
+			if reward > 1000
+				
+				cashAmount = cashAmount + 10;
+				
+			end % of if reward
+			
+		end % of if anotherVariable > 100
+		
+	end % of while another Variable
+	
 end % of if someVariable
+
 ```
 
 This is particularly useful when you have a lot of nested loops (i.e. loops within loops) or `if` statements. It is also useful for detecting when you add/remove an `end` statement and the existing `end` statements don’t line up with their intended `for/while/if` statements.
