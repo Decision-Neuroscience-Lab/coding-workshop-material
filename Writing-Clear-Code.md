@@ -174,11 +174,11 @@ visAngleImage = imageSize_cm / distanceFromScreen_cm *
 ```
 Brief syntatical notes on how to comment:
 
-- Use % for every single line of comment. Everything from % to the end of the line is ignored by the program, and is meant for the human reader when going through the code.
-- Use %{ *comment* %} for multi line comments, or repeat % down the left side of the paragraph.
+- Use % for every single line of comment. Everything from % to the end of the line is ignored by the program, and is meant for the human reader when going through the code. In R you instead use the symbol # and in Python you also use #.
+- Use %{ *comment* %} for multi line comments, or repeat % down the left side of the paragraph. For other languages, you can easily google the appropriate syntax.
 
 
-Block comments:
+Block comments in MATLAB:
 
 ```
 %
@@ -192,7 +192,7 @@ Block comments:
 some code
 ```
 
-Multi line comments:
+Multi line comments in MATLAB:
 
 ```
 %{ i am a multi line! %}
@@ -201,7 +201,7 @@ some code
 
 ```
 
-Block multi line comments:
+Block multi line comments in MATLAB:
 ```
 %{
 
